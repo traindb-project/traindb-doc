@@ -1,6 +1,6 @@
 # Summary
 
-* [소개](README.md)
+* [개요](README.md)
 * [튜토리얼](TUTORIAL.md)
     * [시작하기](tutorial/GETTING_STARTED.md)
     * [CLI 사용 예](tutorial/EXAMPLES_CLI.md)
