@@ -94,3 +94,22 @@ DROP MODEL INSTANCE 모델_인스턴스;
 (0 rows)
 ```
 
+## 모델 삭제
+
+- DROP MODEL 모델_이름;
+
+   ### 사용예
+   - DROP MODEL tablegan;
+
+   ### 확인
+   - SHOW MODELS;
+```console
++
+|
++
++
+(0 rows)
+```
+
+
+
