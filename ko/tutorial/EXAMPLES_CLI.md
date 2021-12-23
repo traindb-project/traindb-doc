@@ -76,3 +76,21 @@
 +
 (0 rows)
 ```
+
+## 모델 인스턴스 삭제
+
+DROP MODEL INSTANCE 모델_인스턴스;
+
+   ### 사용예
+   - DROP MODEL INSTANCE tgan;
+
+   ### 확인
+   - SHOW MODEL tablegan INSTANCES;
+```console
++
+|
++
++
+(0 rows)
+```
+
