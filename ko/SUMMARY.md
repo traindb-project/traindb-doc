@@ -8,3 +8,4 @@
 * [SQL 참조 안내서](SQL.md)
     * [CREATE MODEL](sql/CREATE_MODEL.md)
     * [DROP MODEL](sql/DROP_MODEL.md)
+    * [TRAIN MODEL INSTSANCE](sql/TRAIN_MODEL_INSTANCE.md)
