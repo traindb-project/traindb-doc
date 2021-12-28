@@ -183,12 +183,90 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../sql/SELECT.html">
+        <li class="chapter " data-level="1.3.1" data-path="../sql/CREATE_MODEL.html">
             
-                <a href="../sql/SELECT.html">
+                <a href="../sql/CREATE_MODEL.html">
             
                     
-                    SELECT
+                    CREATE MODEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../sql/CREATE_SYNOPSIS.html">
+            
+                <a href="../sql/CREATE_SYNOPSIS.html">
+            
+                    
+                    CREATE SYNOPSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../sql/DROP_MODEL.html">
+            
+                <a href="../sql/DROP_MODEL.html">
+            
+                    
+                    DROP MODEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../sql/DROP_MODEL_INSTANCE.html">
+            
+                <a href="../sql/DROP_MODEL_INSTANCE.html">
+            
+                    
+                    DROP MODEL INSTANCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../sql/DROP_SYNOPSIS.html">
+            
+                <a href="../sql/DROP_SYNOPSIS.html">
+            
+                    
+                    DROP SYNOPSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../sql/SHOW.html">
+            
+                <a href="../sql/SHOW.html">
+            
+                    
+                    SHOW
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../sql/TRAIN_MODEL_INSTANCE.html">
+            
+                <a href="../sql/TRAIN_MODEL_INSTANCE.html">
+            
+                    
+                    TRAIN MODEL INSTANCE
             
                 </a>
             
@@ -248,8 +326,40 @@
                                 
                                 <h1 id="&#xC2DC;&#xC791;&#xD558;&#xAE30;">&#xC2DC;&#xC791;&#xD558;&#xAE30;</h1>
 <h2 id="&#xC2E4;&#xD589;-&#xD658;&#xACBD;-&#xC900;&#xBE44;">&#xC2E4;&#xD589; &#xD658;&#xACBD; &#xC900;&#xBE44;</h2>
+<p>TrainDB&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xB824;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xD658;&#xACBD;&#xC774; &#xD544;&#xC694;&#xD558;&#xB2E4;. &#xC124;&#xCE58; &#xAD8C;&#xD55C;&#xC774; &#xC5C6;&#xB2E4;&#xBA74;, &#xC2DC;&#xC2A4;&#xD15C; &#xAD00;&#xB9AC;&#xC790;&#xC5D0;&#xAC8C; &#xC694;&#xCCAD;&#xD558;&#xAE30; &#xBC14;&#xB780;&#xB2E4;.</p>
+<h3 id="traindb">TrainDB</h3>
+<ul>
+<li>Java 8+</li>
+<li>Maven 3.x</li>
+<li>SQLite3</li>
+</ul>
+<h3 id="traindb-ml-&#xBAA8;&#xB378;-&#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;">TrainDB ML &#xBAA8;&#xB378; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;</h3>
+<ul>
+<li>Python 3.x</li>
+<li><a href="https://github.com/sdv-dev/SDGym" target="_blank">SDGym</a><ul>
+<li>Using <code>pip</code>: pip install sdgym</li>
+<li>Using <code>conda</code>: conda install -c sdv-dev -c conda-forge sdgymm</li>
+</ul>
+</li>
+</ul>
 <h2 id="&#xC124;&#xCE58;">&#xC124;&#xCE58;</h2>
-<h2 id="&#xC6B4;&#xC601;">&#xC6B4;&#xC601;</h2>
+<h3 id="&#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;">&#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;</h3>
+<p>TrainDB&#xC758; &#xACF5;&#xAC1C; &#xC800;&#xC7A5;&#xC18C;&#xB294; <a href="https://github.com/traindb-project/traindb" target="_blank">https://github.com/traindb-project/traindb</a>&#xC774;&#xB2E4;. &#xD574;&#xB2F9; &#xC8FC;&#xC18C;&#xB85C;&#xBD80;&#xD130; &#xB9B4;&#xB9AC;&#xC2A4;&#xB41C; &#xC555;&#xCD95; &#xD30C;&#xC77C;&#xC744; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;&#xD558;&#xAC70;&#xB098; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; git&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xB0B4;&#xB824;&#xBC1B;&#xB294;&#xB2E4;.</p>
+<pre><code class="lang-console">git clone https://github.com/traindb-project/traindb.git
+</code></pre>
+<h3 id="&#xBE4C;&#xB4DC;">&#xBE4C;&#xB4DC;</h3>
+<p>&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; Maven&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xBE4C;&#xB4DC;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<pre><code class="lang-console">$ cd traindb
+$ mvn package
+</code></pre>
+<p>&#xBE4C;&#xB4DC;&#xD558;&#xACE0; &#xB098;&#xBA74; <code>traindb-x.y.z-SNAPSHOT.tar.gz</code> &#xD30C;&#xC77C;&#xC774; traindb-assembly/target &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; &#xC0DD;&#xC131;&#xB41C;&#xB2E4;. &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xC555;&#xCD95;&#xC744; &#xD574;&#xC81C;&#xD574; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xB41C;&#xB2E4;.</p>
+<pre><code class="lang-console">$ tar xvfz traindb-assembly/target/traindb-0.1.0-SNAPSHOT.tar.gz
+</code></pre>
+<p>TrainDB &#xB0B4;&#xC5D0;&#xC11C; ML &#xBAA8;&#xB378;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;, &#xBAA8;&#xB378; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.
+&#xB2E4;&#xC74C;&#xC758; &#xBA85;&#xB839;&#xC744; &#xD1B5;&#xD574; &#xBAA8;&#xB378; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<pre><code class="lang-console">$ cd traindb-assembly/target/traindb-0.1.0-SNAPSHOT
+$ svn co https://github.com/traindb-project/traindb-model/trunk/models
+</code></pre>
 
                                 
                                 </section>
@@ -293,7 +403,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"시작하기","level":"1.2.1","depth":2,"next":{"title":"CLI 사용 예","level":"1.2.2","depth":2,"path":"tutorial/EXAMPLES_CLI.md","ref":"tutorial/EXAMPLES_CLI.md","articles":[]},"previous":{"title":"튜토리얼","level":"1.2","depth":1,"path":"TUTORIAL.md","ref":"TUTORIAL.md","articles":[{"title":"시작하기","level":"1.2.1","depth":2,"path":"tutorial/GETTING_STARTED.md","ref":"tutorial/GETTING_STARTED.md","articles":[]},{"title":"CLI 사용 예","level":"1.2.2","depth":2,"path":"tutorial/EXAMPLES_CLI.md","ref":"tutorial/EXAMPLES_CLI.md","articles":[]},{"title":"JDBC 사용 예","level":"1.2.3","depth":2,"path":"tutorial/EXAMPLES_JDBC.md","ref":"tutorial/EXAMPLES_JDBC.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night","family":"sans","size":2},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","language":"ko","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"tutorial/GETTING_STARTED.md","mtime":"2021-08-23T04:49:09.803Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-08T09:15:44.276Z"},"basePath":"..","book":{"language":"ko"}});
+            gitbook.page.hasChanged({"page":{"title":"시작하기","level":"1.2.1","depth":2,"next":{"title":"CLI 사용 예","level":"1.2.2","depth":2,"path":"tutorial/EXAMPLES_CLI.md","ref":"tutorial/EXAMPLES_CLI.md","articles":[]},"previous":{"title":"튜토리얼","level":"1.2","depth":1,"path":"TUTORIAL.md","ref":"TUTORIAL.md","articles":[{"title":"시작하기","level":"1.2.1","depth":2,"path":"tutorial/GETTING_STARTED.md","ref":"tutorial/GETTING_STARTED.md","articles":[]},{"title":"CLI 사용 예","level":"1.2.2","depth":2,"path":"tutorial/EXAMPLES_CLI.md","ref":"tutorial/EXAMPLES_CLI.md","articles":[]},{"title":"JDBC 사용 예","level":"1.2.3","depth":2,"path":"tutorial/EXAMPLES_JDBC.md","ref":"tutorial/EXAMPLES_JDBC.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night","family":"sans","size":2},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","language":"ko","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"tutorial/GETTING_STARTED.md","mtime":"2021-12-28T02:00:54.265Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-28T02:03:26.702Z"},"basePath":"..","book":{"language":"ko"}});
         });
     </script>
 </div>
