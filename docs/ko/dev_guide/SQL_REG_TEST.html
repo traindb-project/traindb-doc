@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>TRAIN MODEL INSTANCE · TrainDB Documentation</title>
+        <title>SQL 회귀 테스트 실행 방법 · TrainDB Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../DEV_GUIDE.html" />
     
-    
-    <link rel="prev" href="SHOW.html" />
+    <link rel="prev" href="../DEV_GUIDE.html" />
     
 
     </head>
@@ -183,9 +181,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="CREATE_MODEL.html">
+        <li class="chapter " data-level="1.3.1" data-path="../sql/CREATE_MODEL.html">
             
-                <a href="CREATE_MODEL.html">
+                <a href="../sql/CREATE_MODEL.html">
             
                     
                     CREATE MODEL
@@ -196,9 +194,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="CREATE_SYNOPSIS.html">
+        <li class="chapter " data-level="1.3.2" data-path="../sql/CREATE_SYNOPSIS.html">
             
-                <a href="CREATE_SYNOPSIS.html">
+                <a href="../sql/CREATE_SYNOPSIS.html">
             
                     
                     CREATE SYNOPSIS
@@ -209,9 +207,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="DROP_MODEL.html">
+        <li class="chapter " data-level="1.3.3" data-path="../sql/DROP_MODEL.html">
             
-                <a href="DROP_MODEL.html">
+                <a href="../sql/DROP_MODEL.html">
             
                     
                     DROP MODEL
@@ -222,9 +220,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="DROP_MODEL_INSTANCE.html">
+        <li class="chapter " data-level="1.3.4" data-path="../sql/DROP_MODEL_INSTANCE.html">
             
-                <a href="DROP_MODEL_INSTANCE.html">
+                <a href="../sql/DROP_MODEL_INSTANCE.html">
             
                     
                     DROP MODEL INSTANCE
@@ -235,9 +233,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="DROP_SYNOPSIS.html">
+        <li class="chapter " data-level="1.3.5" data-path="../sql/DROP_SYNOPSIS.html">
             
-                <a href="DROP_SYNOPSIS.html">
+                <a href="../sql/DROP_SYNOPSIS.html">
             
                     
                     DROP SYNOPSIS
@@ -248,9 +246,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="SHOW.html">
+        <li class="chapter " data-level="1.3.6" data-path="../sql/SHOW.html">
             
-                <a href="SHOW.html">
+                <a href="../sql/SHOW.html">
             
                     
                     SHOW
@@ -261,9 +259,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.7" data-path="TRAIN_MODEL_INSTANCE.html">
+        <li class="chapter " data-level="1.3.7" data-path="../sql/TRAIN_MODEL_INSTANCE.html">
             
-                <a href="TRAIN_MODEL_INSTANCE.html">
+                <a href="../sql/TRAIN_MODEL_INSTANCE.html">
             
                     
                     TRAIN MODEL INSTANCE
@@ -293,9 +291,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../dev_guide/SQL_REG_TEST.html">
+        <li class="chapter active" data-level="1.4.1" data-path="SQL_REG_TEST.html">
             
-                <a href="../dev_guide/SQL_REG_TEST.html">
+                <a href="SQL_REG_TEST.html">
             
                     
                     SQL 회귀 테스트 실행 방법
@@ -341,7 +339,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >TRAIN MODEL INSTANCE</a>
+        <a href=".." >SQL 회귀 테스트 실행 방법</a>
     </h1>
 </div>
 
@@ -356,35 +354,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="train-model-instance">TRAIN MODEL INSTANCE</h2>
-<h3 id="&#xBAA9;&#xC801;">&#xBAA9;&#xC801;</h3>
-<p>TRAIN MODEL INSTANCE &#xBB38;&#xC740; &#xC815;&#xC758;&#xD55C; &#xBAA8;&#xB378;&#xC744; &#xB300;&#xC0C1; &#xD14C;&#xC774;&#xBE14;&#xC758; &#xCEEC;&#xB7FC;&#xC5D0; &#xB300;&#xD574; &#xD559;&#xC2B5;&#xC2DC;&#xCF1C; &#xBAA8;&#xB378; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xAD6C;&#xCD95;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</p>
-<h3 id="&#xAD6C;&#xBB38;">&#xAD6C;&#xBB38;</h3>
-<h4 id="trainmodelinstance">trainModelInstance</h4>
-<p><img src="diagram/trainModelInstance.png" alt=""></p>
-<h4 id="traintargetclause">trainTargetClause</h4>
-<p><img src="diagram/trainTargetClause.png" alt=""></p>
-<h4 id="columnnamelist">columnNameList</h4>
-<p><img src="diagram/columnNameList.png" alt=""></p>
-<h3 id="&#xD0A4;&#xC6CC;&#xB4DC;-&#xBC0F;-&#xD30C;&#xB77C;&#xBBF8;&#xD130;">&#xD0A4;&#xC6CC;&#xB4DC; &#xBC0F; &#xD30C;&#xB77C;&#xBBF8;&#xD130;</h3>
-<h4 id="modelname">modelName</h4>
-<p>&#xD559;&#xC2B5;&#xC2DC;&#xD0AC; &#xBAA8;&#xB378;&#xBA85;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC2DD;&#xBCC4;&#xC790;&#xB2E4;.</p>
-<h4 id="modelinstancename">modelInstanceName</h4>
-<p>&#xBAA8;&#xB378;&#xC744; &#xD559;&#xC2B5;&#xC2DC;&#xCF1C; &#xC5BB;&#xC740; &#xBAA8;&#xB378; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xBA85;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC2DD;&#xBCC4;&#xC790;&#xB2E4;.</p>
-<h4 id="traintargetclause">trainTargetClause</h4>
-<p>&#xD559;&#xC2B5;&#xC2DC;&#xD0AC; &#xB300;&#xC0C1; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC808;&#xC774;&#xB2E4;.</p>
-<h4 id="schemaname">schemaName</h4>
-<p>&#xD559;&#xC2B5; &#xB300;&#xC0C1; &#xD14C;&#xC774;&#xBE14;&#xC774; &#xD3EC;&#xD568;&#xB41C; &#xC2A4;&#xD0A4;&#xB9C8;&#xBA85;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC2DD;&#xBCC4;&#xC790;&#xB2E4;. &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xD604;&#xC7AC; &#xC0AC;&#xC6A9; &#xC911;&#xC778; &#xC2A4;&#xD0A4;&#xB9C8;&#xB85C; &#xC9C0;&#xC815;&#xB41C;&#xB2E4;.</p>
-<h4 id="tablename">tableName</h4>
-<p>&#xD559;&#xC2B5; &#xB300;&#xC0C1;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD560; &#xD14C;&#xC774;&#xBE14;&#xBA85;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC2DD;&#xBCC4;&#xC790;&#xB2E4;.</p>
-<h4 id="columnnamelist">columnNameList</h4>
-<p>&#xD559;&#xC2B5; &#xB300;&#xC0C1; &#xB370;&#xC774;&#xD130;&#xB85C; &#xC9C0;&#xC815;&#xD560; &#xCEEC;&#xB7FC; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xC9C0;&#xC815;&#xD55C;&#xB2E4;. &#xCEF4;&#xB9C8;(,)&#xB85C; &#xAD6C;&#xBD84;&#xD558;&#xC5EC; &#xC5EC;&#xB7EC; &#xCEEC;&#xB7FC;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
-<h3 id="&#xC608;&#xC2DC;">&#xC608;&#xC2DC;</h3>
-<h4 id="&#xBAA8;&#xB378;-&#xC778;&#xC2A4;&#xD134;&#xC2A4;-&#xD559;&#xC2B5;">&#xBAA8;&#xB378; &#xC778;&#xC2A4;&#xD134;&#xC2A4; &#xD559;&#xC2B5;</h4>
-<p>&#xB2E4;&#xC74C;&#xC740; &#xC815;&#xC758;&#xB418;&#xC5B4; &#xC788;&#xB294; tablegan&#xC774;&#xB77C;&#xB294; &#xBAA8;&#xB378;&#xC744; instacart &#xC2A4;&#xD0A4;&#xB9C8;&#xC5D0; &#xC18D;&#xD55C; order_products &#xD14C;&#xC774;&#xBE14;&#xC758; product_id, add_to_cart_order &#xCEEC;&#xB7FC;&#xC744; &#xB300;&#xC0C1;&#xC73C;&#xB85C; &#xD559;&#xC2B5;&#xC2DC;&#xCF1C; tgan&#xC774;&#xB77C;&#xB294; &#xBAA8;&#xB378; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xAD6C;&#xCD95;&#xD558;&#xB294; &#xBB38;&#xC7A5;&#xC774;&#xB2E4;.</p>
-<pre><code class="lang-console">TRAIN MODEL tablegan INSTANCE tgan
-ON instacart.order_products(product_id, add_to_cart_order);
+                                <h1 id="sql-&#xD68C;&#xADC0;-&#xD14C;&#xC2A4;&#xD2B8;-&#xC2E4;&#xD589;-&#xBC29;&#xBC95;">SQL &#xD68C;&#xADC0; &#xD14C;&#xC2A4;&#xD2B8; &#xC2E4;&#xD589; &#xBC29;&#xBC95;</h1>
+<h2 id="&#xD14C;&#xC2A4;&#xD2B8;-&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;-&#xC900;&#xBE44;">&#xD14C;&#xC2A4;&#xD2B8; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4; &#xC900;&#xBE44;</h2>
+<p>SQL &#xD68C;&#xADC0; &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xB824;&#xBA74; &#xBA3C;&#xC800; &#xC0AC;&#xC6A9; &#xC911;&#xC778; DBMS&#xC5D0; &#xD14C;&#xC2A4;&#xD2B8;&#xC6A9; &#xB370;&#xC774;&#xD130;&#xC14B;&#xC744; &#xB85C;&#xB529;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.
+&#xBCF8; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xC11C; &#xD14C;&#xC2A4;&#xD2B8;&#xC5D0; &#xD65C;&#xC6A9; &#xC911;&#xC778; &#xB370;&#xC774;&#xD130;&#xC14B;&#xC774; traindb-core/src/test/resources/datasets &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; &#xB4E4;&#xC5B4; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xC774;&#xB97C; &#xB85C;&#xB529;&#xD558;&#xBA74; &#xB41C;&#xB2E4;.
+&#xD604;&#xC7AC; SQL &#xD68C;&#xADC0; &#xD14C;&#xC2A4;&#xD2B8;&#xC5D0;&#xC11C;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xD14C;&#xC2A4;&#xD2B8; &#xB370;&#xC774;&#xD130;&#xC14B;&#xC744; &#xD65C;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xB2E4;.</p>
+<ul>
+<li><code>instacart_small</code>: <a href="https://www.kaggle.com/c/instacart-market-basket-analysis/" target="_blank">instacart &#xB370;&#xC774;&#xD130;&#xC14B;</a>&#xC744; &#xD14C;&#xC2A4;&#xD2B8;&#xC6A9;&#xC73C;&#xB85C; &#xCD95;&#xC18C;&#xC2DC;&#xD0A8; &#xB370;&#xC774;&#xD130;&#xC14B;</li>
+</ul>
+<p>&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xB97C; &#xB85C;&#xB529;&#xD558;&#xB294; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xAC00; &#xD568;&#xAED8; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC73C;&#xBBC0;&#xB85C;, &#xC774;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xBA74; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xB370;&#xC774;&#xD130;&#xB97C; &#xB85C;&#xB529;&#xD560; &#xC218; &#xC788;&#xB2E4;.
+&#xC608;&#xB97C; &#xB4E4;&#xBA74;, &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; <code>instacart_small</code> &#xB370;&#xC774;&#xD130;&#xC14B;&#xC744; MySQL&#xC5D0; &#xB85C;&#xB529;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<pre><code class="lang-console">$ mysql -u [user id] -p &lt; load_mysql.sql
 </code></pre>
+<h2 id="&#xD14C;&#xC2A4;&#xD2B8;-&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;-&#xC124;&#xC815;">&#xD14C;&#xC2A4;&#xD2B8; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4; &#xC124;&#xC815;</h2>
+<p>traindb-core/src/test/resources &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; traindb-test-config.json.template &#xD30C;&#xC77C;&#xC774; &#xB4E4;&#xC5B4; &#xC788;&#xB2E4;. &#xC774; &#xD30C;&#xC77C;&#xC758; &#xC774;&#xB984;&#xC744; traindb-test-config.json&#xC73C;&#xB85C; &#xBCC0;&#xACBD;&#xD55C; &#xD6C4;, &#xD30C;&#xC77C;&#xC744; &#xC5F4;&#xC5B4; &#xD14C;&#xC2A4;&#xD2B8; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4; &#xC811;&#xC18D; &#xC815;&#xBCF4;&#xB97C; &#xC785;&#xB825;&#xD55C;&#xB2E4;.</p>
+<pre><code class="lang-console">[
+  {
+    &quot;name&quot;: &quot;instacart_small&quot;,
+    &quot;url&quot;: &quot;jdbc:traindb:mysql://localhost:3306&quot;,
+    &quot;user&quot;: &quot;user id&quot;,
+    &quot;password&quot;: &quot;password&quot;
+  }
+]
+</code></pre>
+<h3 id="sql-&#xD68C;&#xADC0;-&#xD14C;&#xC2A4;&#xD2B8;-&#xC2E4;&#xD589;">SQL &#xD68C;&#xADC0; &#xD14C;&#xC2A4;&#xD2B8; &#xC2E4;&#xD589;</h3>
+<p>&#xBCF8; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xC11C;&#xB294; Apache Calcite&#xB97C; &#xB530;&#xB77C; <a href="https://github.com/julianhyde/quidem" target="_blank">Quidem</a> &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xB97C; &#xC774;&#xC6A9;&#xD574; SQL &#xD68C;&#xADC0; &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xC218;&#xD589;&#xD55C;&#xB2E4;. SQL &#xD14C;&#xC2A4;&#xD2B8; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xD30C;&#xC77C;&#xC740; &#xD655;&#xC7A5;&#xC790;&#xAC00; <code>.iq</code>&#xC774;&#xBA70; traindb-core/src/test/resources/sql &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; &#xC704;&#xCE58;&#xD558;&#xACE0; &#xC788;&#xB2E4;. </p>
+<p>&#xC2E4;&#xD589;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; maven &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xBA74; &#xB41C;&#xB2E4;.</p>
+<pre><code class="lang-console">$ mvn test -DskipTests=false
+</code></pre>
+<p>Quidem&#xC740; &#xD14C;&#xC2A4;&#xD2B8; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; &#xC2E4;&#xD589;&#xD55C; &#xCD9C;&#xB825; &#xACB0;&#xACFC;&#xAC00; &#xADF8;&#xB300;&#xB85C; &#xB2E4;&#xC2DC; &#xC2E4;&#xD589;&#xD560; &#xC218; &#xC788;&#xB294; &#xC785;&#xB825; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xAC00; &#xB41C;&#xB2E4;&#xB294; &#xC810;&#xC774; &#xD2B9;&#xC9D5;&#xC774;&#xB2E4;. &#xC774;&#xB7EC;&#xD55C; &#xD2B9;&#xC9D5;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xD14C;&#xC2A4;&#xD2B8; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; &#xC27D;&#xAC8C; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
 
                                 
                                 </section>
@@ -412,14 +410,10 @@ ON instacart.order_products(product_id, add_to_cart_order);
 
             
                 
-                <a href="SHOW.html" class="navigation navigation-prev " aria-label="Previous page: SHOW">
+                <a href="../DEV_GUIDE.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 개발자 안내">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="../DEV_GUIDE.html" class="navigation navigation-next " aria-label="Next page: 개발자 안내">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -428,7 +422,7 @@ ON instacart.order_products(product_id, add_to_cart_order);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"TRAIN MODEL INSTANCE","level":"1.3.7","depth":2,"next":{"title":"개발자 안내","level":"1.4","depth":1,"path":"DEV_GUIDE.md","ref":"DEV_GUIDE.md","articles":[{"title":"SQL 회귀 테스트 실행 방법","level":"1.4.1","depth":2,"path":"dev_guide/SQL_REG_TEST.md","ref":"dev_guide/SQL_REG_TEST.md","articles":[]}]},"previous":{"title":"SHOW","level":"1.3.6","depth":2,"path":"sql/SHOW.md","ref":"sql/SHOW.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night","family":"sans","size":2},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","language":"ko","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"sql/TRAIN_MODEL_INSTANCE.md","mtime":"2021-12-27T07:30:07.430Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-21T06:08:13.693Z"},"basePath":"..","book":{"language":"ko"}});
+            gitbook.page.hasChanged({"page":{"title":"SQL 회귀 테스트 실행 방법","level":"1.4.1","depth":2,"previous":{"title":"개발자 안내","level":"1.4","depth":1,"path":"DEV_GUIDE.md","ref":"DEV_GUIDE.md","articles":[{"title":"SQL 회귀 테스트 실행 방법","level":"1.4.1","depth":2,"path":"dev_guide/SQL_REG_TEST.md","ref":"dev_guide/SQL_REG_TEST.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night","family":"sans","size":2},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","language":"ko","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"dev_guide/SQL_REG_TEST.md","mtime":"2022-03-21T06:06:26.782Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-21T06:08:13.693Z"},"basePath":"..","book":{"language":"ko"}});
         });
     </script>
 </div>
