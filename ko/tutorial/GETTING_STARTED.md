@@ -6,7 +6,7 @@ TrainDB를 실행하려면 다음과 같은 환경이 필요하다. 설치 권�
 
 ### TrainDB
 
-* Java 8+
+* Java 11+
 * Maven 3.x
 * SQLite3
 
@@ -14,8 +14,8 @@ TrainDB를 실행하려면 다음과 같은 환경이 필요하다. 설치 권�
 
 * Python 3.x
 * [SDGym](https://github.com/sdv-dev/SDGym)
-  * Using ```pip```: pip install sdgym
-  * Using ```conda```: conda install -c sdv-dev -c conda-forge sdgymm
+  * Using ```pip```: pip install pomegranate==0.14.6 sdgym==0.5.0
+  * Using ```conda```: conda install -c sdv-dev -c conda-forge sdgym
 
 
 ## 설치
