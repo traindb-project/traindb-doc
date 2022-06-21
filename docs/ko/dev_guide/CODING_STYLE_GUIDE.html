@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>CLI 사용 예 · TrainDB Documentation</title>
+        <title>코딩 스타일 가이드 · TrainDB Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="EXAMPLES_JDBC.html" />
     
-    
-    <link rel="prev" href="GETTING_STARTED.html" />
+    <link rel="prev" href="SQL_REG_TEST.html" />
     
 
     </head>
@@ -125,9 +123,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="GETTING_STARTED.html">
+        <li class="chapter " data-level="1.2.1" data-path="../tutorial/GETTING_STARTED.html">
             
-                <a href="GETTING_STARTED.html">
+                <a href="../tutorial/GETTING_STARTED.html">
             
                     
                     시작하기
@@ -138,9 +136,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="EXAMPLES_CLI.html">
+        <li class="chapter " data-level="1.2.2" data-path="../tutorial/EXAMPLES_CLI.html">
             
-                <a href="EXAMPLES_CLI.html">
+                <a href="../tutorial/EXAMPLES_CLI.html">
             
                     
                     CLI 사용 예
@@ -151,9 +149,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="EXAMPLES_JDBC.html">
+        <li class="chapter " data-level="1.2.3" data-path="../tutorial/EXAMPLES_JDBC.html">
             
-                <a href="EXAMPLES_JDBC.html">
+                <a href="../tutorial/EXAMPLES_JDBC.html">
             
                     
                     JDBC 사용 예
@@ -293,9 +291,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../dev_guide/SQL_REG_TEST.html">
+        <li class="chapter " data-level="1.4.1" data-path="SQL_REG_TEST.html">
             
-                <a href="../dev_guide/SQL_REG_TEST.html">
+                <a href="SQL_REG_TEST.html">
             
                     
                     SQL 회귀 테스트 실행 방법
@@ -306,9 +304,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../dev_guide/CODING_STYLE_GUIDE.html">
+        <li class="chapter active" data-level="1.4.2" data-path="CODING_STYLE_GUIDE.html">
             
-                <a href="../dev_guide/CODING_STYLE_GUIDE.html">
+                <a href="CODING_STYLE_GUIDE.html">
             
                     
                     코딩 스타일 가이드
@@ -354,7 +352,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >CLI 사용 예</a>
+        <a href=".." >코딩 스타일 가이드</a>
     </h1>
 </div>
 
@@ -369,58 +367,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cli-&#xC0AC;&#xC6A9;-&#xC608;">CLI &#xC0AC;&#xC6A9; &#xC608;</h1>
-<h2 id="cli-&#xB3C4;&#xAD6C;-&#xC2E4;&#xD589;">CLI &#xB3C4;&#xAD6C; &#xC2E4;&#xD589;</h2>
-<p>TrainDB&#xC5D0;&#xC11C;&#xB294; CLI&#xB97C; &#xD1B5;&#xD574; SQL &#xBB38;&#xC744; &#xC2E4;&#xD589;&#xD560; &#xC218; &#xC788;&#xB294; trsql&#xC744; &#xC81C;&#xACF5;&#xD55C;&#xB2E4;. &#xC774;&#xB294; &#xC624;&#xD508; &#xC18C;&#xC2A4; CLI &#xB3C4;&#xAD6C;&#xC778; <a href="https://github.com/julianhyde/sqlline" target="_blank">sqlline</a>&#xC744; TrainDB&#xC5D0; &#xD1B5;&#xD569;&#xD55C; &#xAC83;&#xC774;&#xB2E4;.</p>
-<p>trsql &#xC2E4;&#xD589; &#xD30C;&#xC77C;&#xC740; bin &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; &#xC874;&#xC7AC;&#xD558;&#xBA70;, &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xC2E4;&#xD589;&#xD558;&#xBA74; &#xD504;&#xB86C;&#xD504;&#xD2B8;&#xAC00; &#xD45C;&#xC2DC;&#xB41C;&#xB2E4;.</p>
-<pre><code class="lang-console">% cd $TRAINDB_HOME/bin
-% ./trsql
-sqlline version 1.11.0
-sqlline&gt;
-</code></pre>
-<h2 id="&#xB370;&#xC774;&#xD130;-&#xC18C;&#xC2A4;-&#xC811;&#xC18D;">&#xB370;&#xC774;&#xD130; &#xC18C;&#xC2A4; &#xC811;&#xC18D;</h2>
-<p>SQL &#xBB38;&#xC744; &#xC2E4;&#xD589;&#xD558;&#xB824;&#xBA74; &#xBA3C;&#xC800; &#xB370;&#xC774;&#xD130; &#xC18C;&#xC2A4;&#xC5D0; &#xC811;&#xC18D;&#xD574;&#xC57C; &#xD55C;&#xB2E4;. &#xC811;&#xC18D;&#xD558;&#xB824;&#xB294; JDBC &#xB4DC;&#xB77C;&#xC774;&#xBC84;&#xAC00; &#xD544;&#xC694;&#xD558;&#xBBC0;&#xB85C; CLASSPATH &#xB0B4;&#xC5D0; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC5B4;&#xC57C; &#xD55C;&#xB2E4;. &#xB2E4;&#xC74C;&#xC740; trsql&#xC744; &#xC2E4;&#xD589;&#xD558;&#xC5EC; localhost&#xC758; MySQL &#xB370;&#xC774;&#xD130; &#xC18C;&#xC2A4;&#xC5D0; &#xC811;&#xC18D;&#xD558;&#xB294; &#xC608;&#xC774;&#xB2E4;.</p>
-<pre><code class="lang-console">sqlline&gt; !connect jdbc:traindb:mysql://localhost
-Enter username for jdbc:traindb:mysql://localhost: &lt;username&gt;
-Enter password for jdbc:traindb:mysql://localhost: &lt;password&gt;
-0: jdbc:traindb:mysql//localhost&gt;
-</code></pre>
-<h2 id="sql-&#xC2E4;&#xD589;">SQL &#xC2E4;&#xD589;</h2>
-<p>&#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; &#xC811;&#xC18D;&#xC774; &#xC774;&#xB8E8;&#xC5B4;&#xC9C0;&#xACE0; &#xB098;&#xBA74;, &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; TrainDB&#xC5D0;&#xC11C; &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xB2E4;&#xC591;&#xD55C; SQL &#xBB38;&#xC744; &#xC2E4;&#xD589;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
-<pre><code class="lang-console">0: jdbc:traindb:mysql//localhost&gt; CREATE MODEL tablegan TYPE SYNOPSIS LOCAL AS &apos;TableGAN&apos; IN &apos;models/TableGAN.py&apos;;
-No rows affected (0.231 seconds)
-0: jdbc:traindb:mysql//localhost&gt; SHOW MODELS;
-+----------+----------+----------+----------+--------------------+
-| model    | type     | location | class    | uri                |
-+----------+----------+----------+----------+--------------------+
-| tablegan | SYNOPSIS | LOCAL    | TableGAN | models/TableGAN.py |
-+----------+----------+----------+----------+--------------------+
-0: jdbc:traindb:mysql//localhost&gt; TRAIN MODEL tablegan INSTANCE tgan ON instacart.order_products(product_id, add_to_cart_order);
-epoch 1 step 50 tensor(1.1035, grad_fn=&lt;SubBackward0&gt;) tensor(0.7770, grad_fn=&lt;NegBackward&gt;) None
-epoch 1 step 100 tensor(0.8791, grad_fn=&lt;SubBackward0&gt;) tensor(0.9682, grad_fn=&lt;NegBackward&gt;) None
-...
-No rows affected (###.## seconds)
-0: jdbc:traindb:mysql//localhost&gt; SHOW MODEL INSTANCES;
-+----------+----------------+-----------+----------------+---------------------------------+
-| model    | model_instance | schema    | table          | columns                         |
-+----------+----------------+-----------+----------------+---------------------------------+
-| tablegan | tgan           | instacart | order_products | [product_id, add_to_cart_order] |
-+----------+----------------+-----------+----------------+---------------------------------+
-0: jdbc:traindb:mysql//localhost&gt; CREATE SYNOPSIS order_products_syn FROM MODEL INSTANCE tgan LIMIT 1000;
-No rows affected (#.## seconds)
-0: jdbc:traindb:mysql//localhost&gt; SHOW SYNOPSES;
-+--------------------+----------------+-----------+----------------+---------------------------------+
-| synopsis           | model_instance | schema    | table          | columns                         |
-+--------------------+----------------+-----------+----------------+---------------------------------+
-| order_products_syn | tgan           | instacart | order_products | [product_id, add_to_cart_order] |
-+--------------------+----------------+-----------+----------------+---------------------------------+
-0: jdbc:traindb:mysql//localhost&gt; SELECT count(*) as c2 FROM instacart.order_products_syn;
-+------+
-| c2   |
-+------+
-| 1000 |
-+------+
-</code></pre>
+                                <h1 id="&#xCF54;&#xB529;-&#xC2A4;&#xD0C0;&#xC77C;-&#xAC00;&#xC774;&#xB4DC;">&#xCF54;&#xB529; &#xC2A4;&#xD0C0;&#xC77C; &#xAC00;&#xC774;&#xB4DC;</h1>
+<p>&#xBCF8; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB294; <a href="https://google.github.io/styleguide/" target="_blank">&#xAD6C;&#xAE00; &#xC2A4;&#xD0C0;&#xC77C; &#xAC00;&#xC774;&#xB4DC;</a>&#xB97C; &#xC900;&#xC6A9;&#xD55C;&#xB2E4;. &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xC5D0; &#xB530;&#xB77C; &#xC544;&#xB798;&#xC758; &#xB9C1;&#xD06C;&#xB97C; &#xCC38;&#xACE0;&#xD55C;&#xB2E4;.</p>
+<ul>
+<li><a href="https://google.github.io/styleguide/javaguide.html" target="_blank">Java &#xC2A4;&#xD0C0;&#xC77C; &#xAC00;&#xC774;&#xB4DC;</a></li>
+<li><a href="https://google.github.io/styleguide/pyguide.html" target="_blank">Python &#xC2A4;&#xD0C0;&#xC77C; &#xAC00;&#xC774;&#xB4DC;</a></li>
+</ul>
 
                                 
                                 </section>
@@ -448,14 +400,10 @@ No rows affected (#.## seconds)
 
             
                 
-                <a href="GETTING_STARTED.html" class="navigation navigation-prev " aria-label="Previous page: 시작하기">
+                <a href="SQL_REG_TEST.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: SQL 회귀 테스트 실행 방법">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="EXAMPLES_JDBC.html" class="navigation navigation-next " aria-label="Next page: JDBC 사용 예">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -464,7 +412,7 @@ No rows affected (#.## seconds)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CLI 사용 예","level":"1.2.2","depth":2,"next":{"title":"JDBC 사용 예","level":"1.2.3","depth":2,"path":"tutorial/EXAMPLES_JDBC.md","ref":"tutorial/EXAMPLES_JDBC.md","articles":[]},"previous":{"title":"시작하기","level":"1.2.1","depth":2,"path":"tutorial/GETTING_STARTED.md","ref":"tutorial/GETTING_STARTED.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night","family":"sans","size":2},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","language":"ko","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"tutorial/EXAMPLES_CLI.md","mtime":"2021-12-28T01:56:58.314Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-21T06:10:47.079Z"},"basePath":"..","book":{"language":"ko"}});
+            gitbook.page.hasChanged({"page":{"title":"코딩 스타일 가이드","level":"1.4.2","depth":2,"previous":{"title":"SQL 회귀 테스트 실행 방법","level":"1.4.1","depth":2,"path":"dev_guide/SQL_REG_TEST.md","ref":"dev_guide/SQL_REG_TEST.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night","family":"sans","size":2},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","language":"ko","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"dev_guide/CODING_STYLE_GUIDE.md","mtime":"2022-06-21T06:06:49.138Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-21T06:10:47.079Z"},"basePath":"..","book":{"language":"ko"}});
         });
     </script>
 </div>
