@@ -9,13 +9,23 @@
 
     "extension": null,
 
-    "plugins": [],
+    "plugins": [ "versions-select"],
 
     "pluginsConfig": {
         "fontSettings": {
             "theme": "night",
             "family": "sans",
             "size": 2
+        },
+
+        "versions": {
+            "options": [
+                {
+                    "value": "https://traindb-project.github.io/traindb-doc/ko/",
+                    "text": "TrainDB v0.2",
+                    "selected": true
+                }
+            ]
         }
     },
 
