@@ -48,7 +48,7 @@ git clone https://github.com/traindb-project/traindb-doc.git
 
 새로운 문서 파일을 추가했을 경우, 전체 목차인 ```SUMMARY.md```와 해당 챕터의 목차 파일도 업데이트해야 한다는 점에 유의한다.
 
-내용을 수정한 후에는 아래의 명령을 실행해 로컬에서 먼저 올바로 작성되었는지 확인해 본다. 실행 후 http://localhost:4000으로 접속해 확인해 볼 수 있다.
+내용을 수정한 후에는 아래의 명령을 실행해 로컬에서 먼저 올바로 작성되었는지 확인해 본다. 실행 후 http://localhost:4000 으로 접속해 확인해 볼 수 있다.
 
 ```console
 $ gitbook serve
