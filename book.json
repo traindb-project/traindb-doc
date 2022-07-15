@@ -21,7 +21,7 @@
         "versions": {
             "options": [
                 {
-                    "value": "https://traindb-project.github.io/traindb-doc/ko/",
+                    "value": "https://traindb-project.github.io/traindb-doc/0.2",
                     "text": "TrainDB v0.2",
                     "selected": true
                 }
