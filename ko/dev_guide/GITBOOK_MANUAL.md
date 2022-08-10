@@ -15,16 +15,7 @@
 그 다음 npm으로 GitBook의 커맨드 라인 인터페이스를 다음과 같이 설치한다.
 
 ```console
-$ npm install gitbook-cli -g
-$ gitbook --version
-```
-
-혹시 gitbook 명령 실행 시 cb.apply 관련 오류가 발생할 경우 다음을 실행하여 fraceful-fs 문제를 해결해준다.
-
-```console
-(Ubuntu) $ cd /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/
-(MacOS)  $ cd /opt/homebrew/lib/node_modules/gitbook-cli/node_modules/npm/node_modules
-$ npm install graceful-fs@latest --save
+$ npm install gitbook-cli@2.1.2 --global
 $ gitbook --version
 ```
 
