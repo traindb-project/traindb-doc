@@ -2,13 +2,13 @@
 
 ### 목적
 
-DROP MODEL 문은 정의되어 있는 모델을 삭제하는 데 사용한다.
+DROP MODEL 문은 학습되어 있는 모델을 삭제하는 데 사용한다.
 
 
 ### 구문
 
 #### dropModel
-![](diagram/dropModel.png)
+<object type="image/svg+xml" data="./diagram/dropModel.rrd.svg" class="object"></object>
 
 
 ### 키워드 및 파라미터
@@ -22,7 +22,7 @@ DROP MODEL 문은 정의되어 있는 모델을 삭제하는 데 사용한다.
 
 #### 모델 삭제
 
-다음은 기존에 정의되어 있는 tablegan이라는 모델을 삭제하는 문장이다.
+다음은 기존에 학습되어 있는 tgan이라는 모델을 삭제하는 문장이다.
 ```console
-DROP MODEL tablegan;
+DROP MODEL tgan;
 ```

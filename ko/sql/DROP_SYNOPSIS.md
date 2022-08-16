@@ -8,7 +8,7 @@ DROP SYNOPSIS 문은 생성되어 있는 시놉시스 테이블을 삭제하는 
 ### 구문
 
 #### dropSynopsis
-![](diagram/dropSynopsis.png)
+<object type="image/svg+xml" data="./diagram/dropSynopsis.rrd.svg" class="object"></object>
 
 
 ### 키워드 및 파라미터
