@@ -68,16 +68,16 @@ TRAIN MODEL 문은 정의한 모델 타입을 대상 테이블의 컬럼 집합�
 
 #### 모델 학습
 
-다음은 tgan이라는 모델을 기존에 정의되어 있는 tablegan이라는 모델 타입으로 instacart 스키마에 속한 order\_products 테이블의 product\_id, add\_to\_cart\_order 컬럼을 대상으로 학습시키는 문장이다.
+다음은 tgan이라는 모델을 기존에 정의되어 있는 tablegan이라는 모델 타입으로 instacart 스키마에 속한 order\_products 테이블의 reordered, add\_to\_cart\_order 컬럼을 대상으로 학습시키는 문장이다.
 ```console
 TRAIN MODEL tgan MODELTYPE tablegan
-ON instacart.order_products(product_id, add_to_cart_order);
+ON instacart.order_products(reordered, add_to_cart_order);
 ```
 
 뒤에 OPTIONS 절을 추가해 epochs 하이퍼파라미터를 지정할 수도 있다.
 ```console
 TRAIN MODEL tgan MODELTYPE tablegan
-ON instacart.order_products(product_id, add_to_cart_order)
+ON instacart.order_products(reordered, add_to_cart_order)
 OPTIONS ( 'epochs' = 100 );
 ```
 

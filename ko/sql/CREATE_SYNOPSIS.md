@@ -35,5 +35,5 @@ CREATE SYNOPSIS 문은 학습되어 있는 데이터 시놉시스 생성형 모�
 
 다음은 학습되어 있는 데이터 시놉시스 생성형 모델 tgan을 이용해 10,000개 로우를 갖는 시놉시스 테이블 order\_products\_syn을 생성하는 문장이다.
 ```console
-CREATE SYNOPSIS order_products_syn FROM MODEL INSTANCE tgan LIMIT 10000;
+CREATE SYNOPSIS order_products_syn FROM MODEL tgan LIMIT 10000;
 ```
