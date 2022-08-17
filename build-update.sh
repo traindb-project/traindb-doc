@@ -15,7 +15,7 @@
 gitbook_root=$(dirname -- "${BASH_SOURCE-$0}")
 gitbook_root=$(cd -- "$dir"; pwd)
 
-versions=( 0.2 )
+old_versions=( 0.2 )
 languages=( "ko" "en" )
 
 for lang in "${languages[@]}"
@@ -23,7 +23,7 @@ do
   rm -rf $gitbook_root/docs/$lang
   gitbook build $gitbook_root/$lang $gitbook_root/docs/$lang
 
-  for ver in "${versions[@]}"
+  for ver in "${old_versions[@]}"
   do
     gitbook build $gitbook_root/archive/$lang/$ver $gitbook_root/docs/$lang/$ver
   done
