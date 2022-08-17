@@ -8,3 +8,4 @@
 * [DROP SYNOPSIS](sql/DROP_SYNOPSIS.md)
 * [SHOW](sql/SHOW.md)
 * [TRAIN MODEL](sql/TRAIN_MODEL.md)
+* [USE](sql/USE.md)

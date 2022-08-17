@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>시작하기 · TrainDB Documentation</title>
+        <title>USE · TrainDB Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="EXAMPLES_CLI.html" />
+    <link rel="next" href="../DEV_GUIDE.html" />
     
     
-    <link rel="prev" href="../TUTORIAL.html" />
+    <link rel="prev" href="TRAIN_MODEL.html" />
     
 
     </head>
@@ -129,9 +129,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="GETTING_STARTED.html">
+        <li class="chapter " data-level="1.2.1" data-path="../tutorial/GETTING_STARTED.html">
             
-                <a href="GETTING_STARTED.html">
+                <a href="../tutorial/GETTING_STARTED.html">
             
                     
                     시작하기
@@ -142,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="EXAMPLES_CLI.html">
+        <li class="chapter " data-level="1.2.2" data-path="../tutorial/EXAMPLES_CLI.html">
             
-                <a href="EXAMPLES_CLI.html">
+                <a href="../tutorial/EXAMPLES_CLI.html">
             
                     
                     CLI 사용 예
@@ -155,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="EXAMPLES_JDBC.html">
+        <li class="chapter " data-level="1.2.3" data-path="../tutorial/EXAMPLES_JDBC.html">
             
-                <a href="EXAMPLES_JDBC.html">
+                <a href="../tutorial/EXAMPLES_JDBC.html">
             
                     
                     JDBC 사용 예
@@ -187,12 +187,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../sql/CREATE_MODEL.html">
+        <li class="chapter " data-level="1.3.1" data-path="CREATE_MODELTYPE.html">
             
-                <a href="../sql/CREATE_MODEL.html">
+                <a href="CREATE_MODELTYPE.html">
             
                     
-                    CREATE MODEL
+                    CREATE MODELTYPE
             
                 </a>
             
@@ -200,9 +200,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../sql/CREATE_SYNOPSIS.html">
+        <li class="chapter " data-level="1.3.2" data-path="CREATE_SYNOPSIS.html">
             
-                <a href="../sql/CREATE_SYNOPSIS.html">
+                <a href="CREATE_SYNOPSIS.html">
             
                     
                     CREATE SYNOPSIS
@@ -213,9 +213,22 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../sql/DROP_MODEL.html">
+        <li class="chapter " data-level="1.3.3" data-path="DESCRIBE.html">
             
-                <a href="../sql/DROP_MODEL.html">
+                <a href="DESCRIBE.html">
+            
+                    
+                    DESCRIBE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="DROP_MODEL.html">
+            
+                <a href="DROP_MODEL.html">
             
                     
                     DROP MODEL
@@ -226,12 +239,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../sql/DROP_MODEL_INSTANCE.html">
+        <li class="chapter " data-level="1.3.5" data-path="DROP_MODELTYPE.html">
             
-                <a href="../sql/DROP_MODEL_INSTANCE.html">
+                <a href="DROP_MODELTYPE.html">
             
                     
-                    DROP MODEL INSTANCE
+                    DROP MODELTYPE
             
                 </a>
             
@@ -239,9 +252,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../sql/DROP_SYNOPSIS.html">
+        <li class="chapter " data-level="1.3.6" data-path="DROP_SYNOPSIS.html">
             
-                <a href="../sql/DROP_SYNOPSIS.html">
+                <a href="DROP_SYNOPSIS.html">
             
                     
                     DROP SYNOPSIS
@@ -252,9 +265,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../sql/SHOW.html">
+        <li class="chapter " data-level="1.3.7" data-path="SHOW.html">
             
-                <a href="../sql/SHOW.html">
+                <a href="SHOW.html">
             
                     
                     SHOW
@@ -265,12 +278,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="../sql/TRAIN_MODEL_INSTANCE.html">
+        <li class="chapter " data-level="1.3.8" data-path="TRAIN_MODEL.html">
             
-                <a href="../sql/TRAIN_MODEL_INSTANCE.html">
+                <a href="TRAIN_MODEL.html">
             
                     
-                    TRAIN MODEL INSTANCE
+                    TRAIN MODEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.9" data-path="USE.html">
+            
+                <a href="USE.html">
+            
+                    
+                    USE
             
                 </a>
             
@@ -371,7 +397,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >시작하기</a>
+        <a href=".." >USE</a>
     </h1>
 </div>
 
@@ -386,41 +412,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#xC2DC;&#xC791;&#xD558;&#xAE30;">&#xC2DC;&#xC791;&#xD558;&#xAE30;</h1>
-<h2 id="&#xC2E4;&#xD589;-&#xD658;&#xACBD;-&#xC900;&#xBE44;">&#xC2E4;&#xD589; &#xD658;&#xACBD; &#xC900;&#xBE44;</h2>
-<p>TrainDB&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xB824;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xD658;&#xACBD;&#xC774; &#xD544;&#xC694;&#xD558;&#xB2E4;. &#xC124;&#xCE58; &#xAD8C;&#xD55C;&#xC774; &#xC5C6;&#xB2E4;&#xBA74;, &#xC2DC;&#xC2A4;&#xD15C; &#xAD00;&#xB9AC;&#xC790;&#xC5D0;&#xAC8C; &#xC694;&#xCCAD;&#xD558;&#xAE30; &#xBC14;&#xB780;&#xB2E4;.</p>
-<h3 id="traindb">TrainDB</h3>
-<ul>
-<li>Java 11+</li>
-<li>Maven 3.x</li>
-<li>SQLite3</li>
-</ul>
-<h3 id="traindb-ml-&#xBAA8;&#xB378;-&#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;">TrainDB ML &#xBAA8;&#xB378; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;</h3>
-<ul>
-<li>Python 3.x</li>
-<li><a href="https://github.com/sdv-dev/SDGym" target="_blank">SDGym</a><ul>
-<li>Using <code>pip</code>: pip install pomegranate==0.14.6 sdgym==0.5.0</li>
-<li>Using <code>conda</code>: conda install -c sdv-dev -c conda-forge sdgym</li>
-</ul>
-</li>
-</ul>
-<h2 id="&#xC124;&#xCE58;">&#xC124;&#xCE58;</h2>
-<h3 id="&#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;">&#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;</h3>
-<p>TrainDB&#xC758; &#xACF5;&#xAC1C; &#xC800;&#xC7A5;&#xC18C;&#xB294; <a href="https://github.com/traindb-project/traindb" target="_blank">https://github.com/traindb-project/traindb</a>&#xC774;&#xB2E4;. &#xD574;&#xB2F9; &#xC8FC;&#xC18C;&#xB85C;&#xBD80;&#xD130; &#xB9B4;&#xB9AC;&#xC2A4;&#xB41C; &#xC555;&#xCD95; &#xD30C;&#xC77C;&#xC744; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;&#xD558;&#xAC70;&#xB098; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; git&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xB0B4;&#xB824;&#xBC1B;&#xB294;&#xB2E4;.</p>
-<pre><code class="lang-console">git clone https://github.com/traindb-project/traindb.git
-</code></pre>
-<h3 id="&#xBE4C;&#xB4DC;">&#xBE4C;&#xB4DC;</h3>
-<p>&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; Maven&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xBE4C;&#xB4DC;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
-<pre><code class="lang-console">$ cd traindb
-$ mvn package
-</code></pre>
-<p>&#xBE4C;&#xB4DC;&#xD558;&#xACE0; &#xB098;&#xBA74; <code>traindb-x.y.z-SNAPSHOT.tar.gz</code> &#xD30C;&#xC77C;&#xC774; traindb-assembly/target &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; &#xC0DD;&#xC131;&#xB41C;&#xB2E4;. &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xC555;&#xCD95;&#xC744; &#xD574;&#xC81C;&#xD574; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xB41C;&#xB2E4;.</p>
-<pre><code class="lang-console">$ tar xvfz traindb-assembly/target/traindb-0.1.0-SNAPSHOT.tar.gz
-</code></pre>
-<p>TrainDB &#xB0B4;&#xC5D0;&#xC11C; ML &#xBAA8;&#xB378;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;, &#xBAA8;&#xB378; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.
-&#xB2E4;&#xC74C;&#xC758; &#xBA85;&#xB839;&#xC744; &#xD1B5;&#xD574; &#xBAA8;&#xB378; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
-<pre><code class="lang-console">$ cd traindb-assembly/target/traindb-0.1.0-SNAPSHOT
-$ svn co https://github.com/traindb-project/traindb-model/trunk/models
+                                <h2 id="use">USE</h2>
+<h3 id="&#xBAA9;&#xC801;">&#xBAA9;&#xC801;</h3>
+<p>USE &#xBB38;&#xC740; &#xAE30;&#xBCF8; &#xC2A4;&#xD0A4;&#xB9C8;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xAD6C;&#xBB38;&#xC774;&#xB2E4;. &#xD14C;&#xC774;&#xBE14;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xB54C; &#xC55E;&#xC5D0; &#xC2A4;&#xD0A4;&#xB9C8;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xAE30;&#xBCF8; &#xC2A4;&#xD0A4;&#xB9C8;&#xB85C; &#xAC04;&#xC8FC;&#xD558;&#xC5EC; &#xCC98;&#xB9AC;&#xB41C;&#xB2E4;.</p>
+<h3 id="&#xAD6C;&#xBB38;">&#xAD6C;&#xBB38;</h3>
+<h4 id="use">use</h4>
+<object type="image/svg+xml" data="./diagram/use.rrd.svg" class="object"></object>
+
+
+<h3 id="&#xD0A4;&#xC6CC;&#xB4DC;-&#xBC0F;-&#xD30C;&#xB77C;&#xBBF8;&#xD130;">&#xD0A4;&#xC6CC;&#xB4DC; &#xBC0F; &#xD30C;&#xB77C;&#xBBF8;&#xD130;</h3>
+<h4 id="schemaname">schemaName</h4>
+<p>&#xAE30;&#xBCF8; &#xC2A4;&#xD0A4;&#xB9C8;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC2A4;&#xD0A4;&#xB9C8;&#xBA85;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC2DD;&#xBCC4;&#xC790;&#xB2E4;.</p>
+<h3 id="&#xC608;&#xC2DC;">&#xC608;&#xC2DC;</h3>
+<h4 id="&#xAE30;&#xBCF8;-&#xC2A4;&#xD0A4;&#xB9C8;-&#xBCC0;&#xACBD;">&#xAE30;&#xBCF8; &#xC2A4;&#xD0A4;&#xB9C8; &#xBCC0;&#xACBD;</h4>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xAE30;&#xBCF8; &#xC2A4;&#xD0A4;&#xB9C8;&#xB97C; instacart&#xB77C;&#xB294; &#xC2A4;&#xD0A4;&#xB9C8;&#xB85C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xBB38;&#xC7A5;&#xC774;&#xB2E4;.</p>
+<pre><code class="lang-console">USE instacart;
 </code></pre>
 
                                 
@@ -449,12 +455,12 @@ $ svn co https://github.com/traindb-project/traindb-model/trunk/models
 
             
                 
-                <a href="../TUTORIAL.html" class="navigation navigation-prev " aria-label="Previous page: 튜토리얼">
+                <a href="TRAIN_MODEL.html" class="navigation navigation-prev " aria-label="Previous page: TRAIN MODEL">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="EXAMPLES_CLI.html" class="navigation navigation-next " aria-label="Next page: CLI 사용 예">
+                <a href="../DEV_GUIDE.html" class="navigation navigation-next " aria-label="Next page: 개발자 안내">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -465,7 +471,7 @@ $ svn co https://github.com/traindb-project/traindb-model/trunk/models
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"시작하기","level":"1.2.1","depth":2,"next":{"title":"CLI 사용 예","level":"1.2.2","depth":2,"path":"tutorial/EXAMPLES_CLI.md","ref":"tutorial/EXAMPLES_CLI.md","articles":[]},"previous":{"title":"튜토리얼","level":"1.2","depth":1,"path":"TUTORIAL.md","ref":"TUTORIAL.md","articles":[{"title":"시작하기","level":"1.2.1","depth":2,"path":"tutorial/GETTING_STARTED.md","ref":"tutorial/GETTING_STARTED.md","articles":[]},{"title":"CLI 사용 예","level":"1.2.2","depth":2,"path":"tutorial/EXAMPLES_CLI.md","ref":"tutorial/EXAMPLES_CLI.md","articles":[]},{"title":"JDBC 사용 예","level":"1.2.3","depth":2,"path":"tutorial/EXAMPLES_JDBC.md","ref":"tutorial/EXAMPLES_JDBC.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["versions-select"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"highlight":{},"versions":{"options":[{"value":"https://traindb-project.github.io/traindb-doc/ko/","text":"TrainDB v0.5","selected":true},{"value":"https://traindb-project.github.io/traindb-doc/ko/0.2","text":"TrainDB v0.2"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"tutorial/GETTING_STARTED.md","mtime":"2022-08-16T16:54:59.495Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-17T08:38:30.936Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"USE","level":"1.3.9","depth":2,"next":{"title":"개발자 안내","level":"1.4","depth":1,"path":"DEV_GUIDE.md","ref":"DEV_GUIDE.md","articles":[{"title":"SQL 회귀 테스트 실행 방법","level":"1.4.1","depth":2,"path":"dev_guide/SQL_REG_TEST.md","ref":"dev_guide/SQL_REG_TEST.md","articles":[]},{"title":"코딩 스타일 가이드","level":"1.4.2","depth":2,"path":"dev_guide/CODING_STYLE_GUIDE.md","ref":"dev_guide/CODING_STYLE_GUIDE.md","articles":[]},{"title":"GitBook 문서화 방법","level":"1.4.3","depth":2,"path":"dev_guide/GITBOOK_MANUAL.md","ref":"dev_guide/GITBOOK_MANUAL.md","articles":[]}]},"previous":{"title":"TRAIN MODEL","level":"1.3.8","depth":2,"path":"sql/TRAIN_MODEL.md","ref":"sql/TRAIN_MODEL.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions-select"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"highlight":{},"versions":{"options":[{"value":"https://traindb-project.github.io/traindb-doc/ko/","text":"TrainDB v0.5","selected":true},{"value":"https://traindb-project.github.io/traindb-doc/ko/0.2","text":"TrainDB v0.2"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"sql/USE.md","mtime":"2022-08-17T08:36:43.970Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-17T08:38:30.006Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
