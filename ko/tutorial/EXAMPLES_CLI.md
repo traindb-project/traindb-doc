@@ -13,7 +13,7 @@ sqlline>
 ```
 
 ## 데이터 소스 접속
-SQL 문을 실행하려면 먼저 데이터 소스에 접속해야 한다. 접속하려는 JDBC 드라이버가 필요하므로 CLASSPATH 내에 포함되어 있어야 한다. 다음은 trsql을 실행하여 localhost의 MySQL 데이터 소스에 접속하는 예이다.
+SQL 문을 실행하려면 먼저 데이터 소스에 접속해야 한다. 접속하려는 DBMS의 JDBC 드라이버가 필요하므로 CLASSPATH 내에 포함되어 있어야 한다. 다음은 trsql을 실행하여 localhost의 MySQL 데이터 소스에 접속하는 예이다.
 ```console
 sqlline> !connect jdbc:traindb:mysql://localhost
 Enter username for jdbc:traindb:mysql://localhost: <username>
@@ -59,7 +59,7 @@ No rows affected (###.## seconds)
 다음은 학습한 모델로부터 시놉시스를 생성한 후 조회하는 예이다.
 
 ```console
-0: jdbc:traindb:mysql//localhost> CREATE SYNOPSIS order_products_syn FROM MODEL tgan LIMIT 100000;
+0: jdbc:traindb:mysql//localhost> CREATE SYNOPSIS order_products_syn FROM MODEL tgan LIMIT 1000;
 No rows affected (#.## seconds)
 0: jdbc:traindb:mysql//localhost> SHOW SYNOPSES;
 +--------------------+-------+-----------+----------------+--------------------------------+------+------------+
