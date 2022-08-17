@@ -45,13 +45,12 @@ git clone https://github.com/traindb-project/traindb-doc.git
 $ gitbook serve
 ```
 
-빌드된 문서화 사이트 파일들이 ```_book``` 디렉토리에 생성되어 있을 것이다.
-기존의 docs 디렉토리를 삭제하고 _book 디렉토리의 이름을 docs로 변경한다.
-본 문서화의 github 저장소는 ```docs``` 디렉토리를 GitHub Pages 사이트로 서비스하도록 설정되어 있기 때문이다. 
+## 커밋
 
+문서 수정을 마쳤으면 아래의 스크립트 파일을 실행하여 문서화 사이트를 빌드한다.
+이 스크립트는 버전별 문서화 사이트를 통합하여 빌드하는 스크립트이다.
 ```console
-$ rm -rf docs
-$ mv _book docs
+$ ./build-update.sh
 ```
 
 이제 변경된 모든 파일들을 add해서 커밋하면 된다.
