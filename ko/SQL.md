@@ -6,6 +6,7 @@
 * [DROP MODEL](sql/DROP_MODEL.md)
 * [DROP MODELTYPE](sql/DROP_MODELTYPE.md)
 * [DROP SYNOPSIS](sql/DROP_SYNOPSIS.md)
+* [SELECT](sql/SELECT.md)
 * [SHOW](sql/SHOW.md)
 * [TRAIN MODEL](sql/TRAIN_MODEL.md)
 * [USE](sql/USE.md)

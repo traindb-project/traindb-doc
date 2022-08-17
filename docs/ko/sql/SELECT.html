@@ -1,0 +1,587 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SELECT · TrainDB Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="SHOW.html" />
+    
+    
+    <link rel="prev" href="DROP_SYNOPSIS.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/traindb-project" target="_blank" class="custom-link">TrainDB Project</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    개요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../TUTORIAL.html">
+            
+                <a href="../TUTORIAL.html">
+            
+                    
+                    튜토리얼
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../tutorial/GETTING_STARTED.html">
+            
+                <a href="../tutorial/GETTING_STARTED.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../tutorial/EXAMPLES_CLI.html">
+            
+                <a href="../tutorial/EXAMPLES_CLI.html">
+            
+                    
+                    CLI 사용 예
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../tutorial/EXAMPLES_JDBC.html">
+            
+                <a href="../tutorial/EXAMPLES_JDBC.html">
+            
+                    
+                    JDBC 사용 예
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../SQL.html">
+            
+                <a href="../SQL.html">
+            
+                    
+                    SQL 참조 안내서
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="CREATE_MODELTYPE.html">
+            
+                <a href="CREATE_MODELTYPE.html">
+            
+                    
+                    CREATE MODELTYPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="CREATE_SYNOPSIS.html">
+            
+                <a href="CREATE_SYNOPSIS.html">
+            
+                    
+                    CREATE SYNOPSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="DESCRIBE.html">
+            
+                <a href="DESCRIBE.html">
+            
+                    
+                    DESCRIBE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="DROP_MODEL.html">
+            
+                <a href="DROP_MODEL.html">
+            
+                    
+                    DROP MODEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="DROP_MODELTYPE.html">
+            
+                <a href="DROP_MODELTYPE.html">
+            
+                    
+                    DROP MODELTYPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="DROP_SYNOPSIS.html">
+            
+                <a href="DROP_SYNOPSIS.html">
+            
+                    
+                    DROP SYNOPSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.7" data-path="SELECT.html">
+            
+                <a href="SELECT.html">
+            
+                    
+                    SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="SHOW.html">
+            
+                <a href="SHOW.html">
+            
+                    
+                    SHOW
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="TRAIN_MODEL.html">
+            
+                <a href="TRAIN_MODEL.html">
+            
+                    
+                    TRAIN MODEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="USE.html">
+            
+                <a href="USE.html">
+            
+                    
+                    USE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../DEV_GUIDE.html">
+            
+                <a href="../DEV_GUIDE.html">
+            
+                    
+                    개발자 안내
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../dev_guide/SQL_REG_TEST.html">
+            
+                <a href="../dev_guide/SQL_REG_TEST.html">
+            
+                    
+                    SQL 회귀 테스트 실행 방법
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../dev_guide/CODING_STYLE_GUIDE.html">
+            
+                <a href="../dev_guide/CODING_STYLE_GUIDE.html">
+            
+                    
+                    코딩 스타일 가이드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../dev_guide/GITBOOK_MANUAL.html">
+            
+                <a href="../dev_guide/GITBOOK_MANUAL.html">
+            
+                    
+                    GitBook 문서화 방법
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SELECT</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="select">SELECT</h2>
+<h3 id="&#xBAA9;&#xC801;">&#xBAA9;&#xC801;</h3>
+<p>SELECT &#xBB38;&#xC740; &#xD14C;&#xC774;&#xBE14;&#xB85C;&#xBD80;&#xD130; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC870;&#xD68C;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</p>
+<p>TrainDB&#xB294; Apache Calcite &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xAD6C;&#xD604;&#xB418;&#xC5B4; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC815;&#xD655; &#xC9C8;&#xC758;&#xB97C; &#xD45C;&#xD604;&#xD558;&#xB294; SELECT &#xBB38;&#xC740; <a href="https://calcite.apache.org/docs/reference.html" target="_blank">Apache Calcite&#xC758; SQL &#xBB38;&#xBC95;</a>&#xC744; &#xB530;&#xB974;&#xBBC0;&#xB85C; &#xC774;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB294; &#xC5F0;&#xACB0;&#xB41C; &#xBB38;&#xC11C;&#xB97C; &#xCC38;&#xACE0;&#xD558;&#xAE30; &#xBC14;&#xB780;&#xB2E4;.</p>
+<p>&#xBCF8; &#xBB38;&#xC11C;&#xC5D0;&#xC11C;&#xB294; TrainDB&#xC5D0;&#xC11C; &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xADFC;&#xC0AC; &#xC9C8;&#xC758; &#xAE30;&#xB2A5;&#xC778; SELECT APPROXIMATE &#xBB38;&#xC5D0; &#xCD08;&#xC810;&#xC744; &#xB9DE;&#xCD94;&#xC5B4; &#xC124;&#xBA85;&#xD55C;&#xB2E4;.</p>
+<h3 id="&#xAD6C;&#xBB38;">&#xAD6C;&#xBB38;</h3>
+<h4 id="select">select</h4>
+<object type="image/svg+xml" data="./diagram/select1.rrd.svg" class="object"></object>
+<object type="image/svg+xml" data="./diagram/select2.rrd.svg" class="object"></object>
+<object type="image/svg+xml" data="./diagram/select3.rrd.svg" class="object"></object>
+<object type="image/svg+xml" data="./diagram/select4.rrd.svg" class="object"></object>
+<object type="image/svg+xml" data="./diagram/select5.rrd.svg" class="object"></object>
+<object type="image/svg+xml" data="./diagram/select6.rrd.svg" class="object"></object>
+
+<h4 id="selectitemlist">selectItemList</h4>
+<object type="image/svg+xml" data="./diagram/selectItemList.rrd.svg" class="object"></object>
+
+<h4 id="selectitem">selectItem</h4>
+<object type="image/svg+xml" data="./diagram/selectItem.rrd.svg" class="object"></object>
+
+<h4 id="tableexpression">tableExpression</h4>
+<object type="image/svg+xml" data="./diagram/tableExpression.rrd.svg" class="object"></object>
+
+<h4 id="tablereference">tableReference</h4>
+<object type="image/svg+xml" data="./diagram/tableReference.rrd.svg" class="object" width="100%" height="100%"></object>
+
+<h4 id="tableprimary">tablePrimary</h4>
+<object type="image/svg+xml" data="./diagram/tablePrimary.rrd.svg" class="object" width="100%" height="100%"></object>
+
+<h4 id="groupitemlist">groupItemList</h4>
+<object type="image/svg+xml" data="./diagram/groupItemList.rrd.svg" class="object"></object>
+
+<h4 id="groupitem">groupItem</h4>
+<object type="image/svg+xml" data="./diagram/groupItem.rrd.svg" class="object"></object>
+
+<h4 id="orderitemlist">orderItemList</h4>
+<object type="image/svg+xml" data="./diagram/orderItemList.rrd.svg" class="object"></object>
+
+<h4 id="orderitem">orderItem</h4>
+<object type="image/svg+xml" data="./diagram/orderItem.rrd.svg" class="object"></object>
+
+<h3 id="&#xD0A4;&#xC6CC;&#xB4DC;-&#xBC0F;-&#xD30C;&#xB77C;&#xBBF8;&#xD130;">&#xD0A4;&#xC6CC;&#xB4DC; &#xBC0F; &#xD30C;&#xB77C;&#xBBF8;&#xD130;</h3>
+<h4 id="approximate">APPROXIMATE</h4>
+<p>&#xADFC;&#xC0AC; &#xC9C8;&#xC758;&#xC784;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xD0A4;&#xC6CC;&#xB4DC;&#xB2E4;. &#xB2E4;&#xC74C;&#xC758; &#xC870;&#xAC74;&#xC744; &#xB9CC;&#xC871;&#xD558;&#xB294; &#xACBD;&#xC6B0;&#xC5D0; &#xADFC;&#xC0AC; &#xC9C8;&#xC758;&#xB85C; &#xCC98;&#xB9AC;&#xB418;&#xBA70;, &#xADFC;&#xC0AC; &#xC9C8;&#xC758;&#xB85C; &#xCC98;&#xB9AC;&#xD560; &#xC218; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xD0A4;&#xC6CC;&#xB4DC;&#xB97C; &#xBB34;&#xC2DC;&#xD55C; &#xCC44; &#xC815;&#xD655; &#xC9C8;&#xC758;&#xB85C; &#xCC98;&#xB9AC;&#xB41C;&#xB2E4;.</p>
+<ul>
+<li>selectItemList&#xC5D0; &#xADFC;&#xC0AC; &#xC9C8;&#xC758;&#xB97C; &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xC9D1;&#xACC4; &#xD568;&#xC218;&#xAC00; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xB2E4;.</li>
+<li>selectItemList&#xC758; &#xCEEC;&#xB7FC;&#xB4E4;&#xC744; &#xD559;&#xC2B5;&#xD55C; &#xBAA8;&#xB378;&#xC774;&#xB098; &#xC2DC;&#xB189;&#xC2DC;&#xC2A4;&#xAC00; &#xC874;&#xC7AC;&#xD55C;&#xB2E4;.</li>
+</ul>
+<p>&#xD604;&#xC7AC; &#xADFC;&#xC0AC; &#xC9C8;&#xC758;&#xAC00; &#xC9C0;&#xC6D0;&#xB418;&#xB294; &#xC9D1;&#xACC4; &#xD568;&#xC218;&#xB85C;&#xB294; avg, sum, count, stddev, variance&#xAC00; &#xC788;&#xB2E4;.
+&#xADFC;&#xC0AC; &#xC9C8;&#xC758; &#xC2DC; GROUP BY, HAVING, ORDER BY &#xC808;&#xC744; &#xD568;&#xAED8; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<h4 id="selectitemlist">selectItemList</h4>
+<p>&#xC870;&#xD68C;&#xD558;&#xACE0;&#xC790; &#xD558;&#xB294; &#xCEEC;&#xB7FC; &#xB610;&#xB294; &#xD45C;&#xD604;&#xC2DD; &#xBAA9;&#xB85D;&#xC744; &#xC9C0;&#xC815;&#xD55C;&#xB2E4;.</p>
+<h4 id="from-tableexpression">FROM tableExpression</h4>
+<p>&#xC870;&#xD68C;&#xD560; &#xB300;&#xC0C1; &#xD14C;&#xC774;&#xBE14;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC808;&#xC774;&#xB2E4;. tableExpression&#xC5D0;&#xB294; &#xD14C;&#xC774;&#xBE14;&#xBA85;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBA70;, &#xCD94;&#xAC00;&#xC801;&#xC73C;&#xB85C; &#xBCC4;&#xCE6D;(alias)&#xC774;&#xB098; &#xCEEC;&#xB7FC;&#xBA85; &#xB9AC;&#xC2A4;&#xD2B8; &#xB4F1;&#xC744; &#xBA85;&#xC2DC;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<h4 id="where-booleanexpression">WHERE booleanExpression</h4>
+<p>WHERE &#xC870;&#xAC74;&#xC808;&#xC740; &#xC9C0;&#xC815;&#xD55C; &#xC870;&#xAC74;&#xC744; &#xCDA9;&#xC871;&#xD558;&#xB294; &#xB85C;&#xC6B0;(row)&#xB4E4;&#xB9CC; &#xC870;&#xD68C;&#xB418;&#xB3C4;&#xB85D; &#xC81C;&#xD55C;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.
+WHERE &#xC870;&#xAC74;&#xC808;&#xC744; &#xC0DD;&#xB7B5;&#xD558;&#xBA74; FROM &#xC808;&#xC758; &#xBAA8;&#xB4E0; &#xB85C;&#xC6B0;&#xAC00; &#xC870;&#xD68C;&#xB41C;&#xB2E4;.</p>
+<h4 id="group-by-groupitemlist">GROUP BY groupItemList</h4>
+<p>groupItemList&#xC5D0; &#xD3EC;&#xD568;&#xB41C; &#xD45C;&#xD604;&#xC2DD;&#xC744; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC870;&#xD68C;&#xB41C; &#xB85C;&#xC6B0;&#xB4E4;&#xC744; &#xADF8;&#xB8F9;&#xD654;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xC808;&#xC774;&#xB2E4;. GROUP BY &#xC808;&#xC5D0; &#xBA85;&#xC2DC;&#xB41C; &#xCEEC;&#xB7FC;&#xC740; selectItemList&#xC5D0; &#xD3EC;&#xD568;&#xB418;&#xC5B4;&#xC57C; &#xD55C;&#xB2E4;.</p>
+<h4 id="having-booleanexpression">HAVING booleanExpression</h4>
+<p>HAVING &#xC808;&#xC740; &#xADF8;&#xB8F9;&#xD654;&#xB41C; &#xACB0;&#xACFC; &#xC911; &#xC9C0;&#xC815;&#xB41C; &#xC870;&#xAC74;&#xC774; TRUE&#xC778; &#xB85C;&#xC6B0;&#xB9CC; &#xC870;&#xD68C;&#xB418;&#xB3C4;&#xB85D; &#xC81C;&#xD55C;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;. HAVING &#xC808;&#xC744; &#xC0DD;&#xB7B5;&#xD558;&#xBA74; &#xBAA8;&#xB4E0; &#xADF8;&#xB8F9;&#xC5D0; &#xB300;&#xD55C; &#xB85C;&#xC6B0;&#xAC00; &#xC870;&#xD68C;&#xB41C;&#xB2E4;.</p>
+<h4 id="order-by-orderitemlist">ORDER BY orderItemList</h4>
+<p>ORDER BY &#xC808;&#xC740; &#xC9C0;&#xC815;&#xD55C; orderItemList&#xC758; &#xC21C;&#xC11C;&#xB300;&#xB85C; &#xACB0;&#xACFC;&#xB97C; &#xC815;&#xB82C;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;. ORDER BY &#xC808;&#xC744; &#xC0DD;&#xB7B5;&#xD558;&#xBA74; &#xACB0;&#xACFC; &#xB85C;&#xC6B0;&#xB4E4;&#xC758; &#xC870;&#xD68C; &#xC21C;&#xC11C;&#xB294; &#xC784;&#xC758;&#xC758; &#xC21C;&#xC11C;&#xB97C; &#xB530;&#xB978;&#xB2E4;.</p>
+<h3 id="&#xC608;&#xC2DC;">&#xC608;&#xC2DC;</h3>
+<h4 id="&#xADFC;&#xC0AC;-&#xC9C8;&#xC758;">&#xADFC;&#xC0AC; &#xC9C8;&#xC758;</h4>
+<p>&#xB2E4;&#xC74C;&#xC740; instacart &#xC2A4;&#xD0A4;&#xB9C8;&#xC5D0; &#xC18D;&#xD55C; order_products &#xD14C;&#xC774;&#xBE14;&#xB85C;&#xBD80;&#xD130; reordered &#xCEEC;&#xB7FC;&#xC758; &#xD569;&#xACC4;&#xB97C; &#xADFC;&#xC0AC;&#xC801;&#xC73C;&#xB85C; &#xC870;&#xD68C;&#xD558;&#xB294; &#xC9C8;&#xC758;&#xBB38;&#xC774;&#xB2E4;.</p>
+<pre><code class="lang-console">SELECT APPROXIMATE sum(reordered) FROM instacart.order_products;
+</code></pre>
+<p>&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; WHERE &#xC870;&#xAC74;&#xC808;, GROUP BY &#xC808;, ORDER BY &#xC808; &#xB4F1;&#xC744; &#xC9C8;&#xC758;&#xC758; &#xC758;&#xB3C4;&#xC5D0; &#xB9DE;&#xAC8C; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<pre><code class="lang-console">SELECT APPROXIMATE sum(reordered) FROM instacart.order_products
+WHERE add_to_cart_order &lt; 5;
+</code></pre>
+<pre><code class="lang-console">SELECT APPROXIMATE sum(reordered) FROM instacart.order_products
+GROUP BY add_to_cart_order
+ORDER BY add_to_cart_order ASC;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="DROP_SYNOPSIS.html" class="navigation navigation-prev " aria-label="Previous page: DROP SYNOPSIS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="SHOW.html" class="navigation navigation-next " aria-label="Next page: SHOW">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SELECT","level":"1.3.7","depth":2,"next":{"title":"SHOW","level":"1.3.8","depth":2,"path":"sql/SHOW.md","ref":"sql/SHOW.md","articles":[]},"previous":{"title":"DROP SYNOPSIS","level":"1.3.6","depth":2,"path":"sql/DROP_SYNOPSIS.md","ref":"sql/DROP_SYNOPSIS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions-select"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"highlight":{},"versions":{"options":[{"value":"https://traindb-project.github.io/traindb-doc/ko/","text":"TrainDB v0.5","selected":true},{"value":"https://traindb-project.github.io/traindb-doc/ko/0.2","text":"TrainDB v0.2"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"sql/SELECT.md","mtime":"2022-08-17T12:57:59.512Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-17T12:58:43.949Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
