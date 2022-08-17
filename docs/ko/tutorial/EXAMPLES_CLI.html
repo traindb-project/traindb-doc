@@ -415,41 +415,53 @@ Enter username for jdbc:traindb:mysql://localhost: &lt;username&gt;
 Enter password for jdbc:traindb:mysql://localhost: &lt;password&gt;
 0: jdbc:traindb:mysql//localhost&gt;
 </code></pre>
-<h2 id="sql-&#xC2E4;&#xD589;">SQL &#xC2E4;&#xD589;</h2>
-<p>&#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; &#xC811;&#xC18D;&#xC774; &#xC774;&#xB8E8;&#xC5B4;&#xC9C0;&#xACE0; &#xB098;&#xBA74;, &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; TrainDB&#xC5D0;&#xC11C; &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xB2E4;&#xC591;&#xD55C; SQL &#xBB38;&#xC744; &#xC2E4;&#xD589;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
-<pre><code class="lang-console">0: jdbc:traindb:mysql//localhost&gt; CREATE MODEL tablegan TYPE SYNOPSIS LOCAL AS &apos;TableGAN&apos; IN &apos;models/TableGAN.py&apos;;
+<h2 id="traindb-sql-&#xC2E4;&#xD589;">TrainDB SQL &#xC2E4;&#xD589;</h2>
+<p>&#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; &#xC811;&#xC18D;&#xC774; &#xC774;&#xB8E8;&#xC5B4;&#xC9C0;&#xACE0; &#xB098;&#xBA74;, &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; TrainDB&#xC5D0;&#xC11C; &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xB2E4;&#xC591;&#xD55C; SQL &#xBB38;&#xC744; &#xC2E4;&#xD589;&#xD560; &#xC218; &#xC788;&#xB2E4;.
+&#xC2E4;&#xD589; &#xC608;&#xC5D0;&#xC11C;&#xB294; instacart &#xB370;&#xC774;&#xD130;&#xC14B;&#xC758; &#xC77C;&#xBD80;&#xB85C; &#xBCF8; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xC11C; &#xD68C;&#xADC0; &#xD14C;&#xC2A4;&#xD2B8; &#xC2DC; &#xC0AC;&#xC6A9;&#xD558;&#xB294; <a href="https://github.com/traindb-project/traindb/tree/main/traindb-core/src/test/resources/datasets/instacart_small" target="_blank">instacart_small</a> &#xB370;&#xC774;&#xD130;&#xC14B;&#xC744; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</p>
+<h3 id="&#xBAA8;&#xB378;-&#xD0C0;&#xC785;-&#xB4F1;&#xB85D;-&#xC870;&#xD68C;">&#xBAA8;&#xB378; &#xD0C0;&#xC785; &#xB4F1;&#xB85D;, &#xC870;&#xD68C;</h3>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xBAA8;&#xB378; &#xD0C0;&#xC785;&#xC744; &#xB4F1;&#xB85D;&#xD55C; &#xD6C4; &#xC870;&#xD68C;&#xD558;&#xB294; &#xC608;&#xC774;&#xB2E4;.</p>
+<pre><code class="lang-console">0: jdbc:traindb:mysql//localhost&gt; CREATE MODELTYPE tablegan FOR SYNOPSIS AS LOCAL CLASS &apos;TableGAN&apos; IN &apos;models/TableGAN.py&apos;; 
 No rows affected (0.231 seconds)
-0: jdbc:traindb:mysql//localhost&gt; SHOW MODELS;
-+----------+----------+----------+----------+--------------------+
-| model    | type     | location | class    | uri                |
-+----------+----------+----------+----------+--------------------+
-| tablegan | SYNOPSIS | LOCAL    | TableGAN | models/TableGAN.py |
-+----------+----------+----------+----------+--------------------+
-0: jdbc:traindb:mysql//localhost&gt; TRAIN MODEL tablegan INSTANCE tgan ON instacart.order_products(product_id, add_to_cart_order);
+0: jdbc:traindb:mysql//localhost&gt; SHOW MODELTYPES;
++-----------+----------+----------+----------+--------------------+
+| modeltype | category | location | class    | uri                |
++-----------+----------+----------+----------+--------------------+
+| tablegan  | SYNOPSIS | LOCAL    | TableGAN | models/TableGAN.py |
++-----------+----------+----------+----------+--------------------+
+</code></pre>
+<h3 id="&#xBAA8;&#xB378;-&#xD559;&#xC2B5;-&#xC870;&#xD68C;">&#xBAA8;&#xB378; &#xD559;&#xC2B5;, &#xC870;&#xD68C;</h3>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xB4F1;&#xB85D;&#xD55C; &#xBAA8;&#xB378; &#xD0C0;&#xC785;&#xC744; &#xB370;&#xC774;&#xD130;&#xC5D0; &#xD559;&#xC2B5;&#xD574; &#xBAA8;&#xB378;&#xC744; &#xAD6C;&#xCD95;&#xD558;&#xACE0; &#xC870;&#xD68C;&#xD558;&#xB294; &#xC608;&#xC774;&#xB2E4;.</p>
+<pre><code class="lang-console">0: jdbc:traindb:mysql//localhost&gt; TRAIN MODEL tgan MODELTYPE tablegan ON instacart_small.order_products(reordered, add_to_cart_order);
 epoch 1 step 50 tensor(1.1035, grad_fn=&lt;SubBackward0&gt;) tensor(0.7770, grad_fn=&lt;NegBackward&gt;) None
 epoch 1 step 100 tensor(0.8791, grad_fn=&lt;SubBackward0&gt;) tensor(0.9682, grad_fn=&lt;NegBackward&gt;) None
 ...
 No rows affected (###.## seconds)
-0: jdbc:traindb:mysql//localhost&gt; SHOW MODEL INSTANCES;
-+----------+----------------+-----------+----------------+---------------------------------+
-| model    | model_instance | schema    | table          | columns                         |
-+----------+----------------+-----------+----------------+---------------------------------+
-| tablegan | tgan           | instacart | order_products | [product_id, add_to_cart_order] |
-+----------+----------------+-----------+----------------+---------------------------------+
-0: jdbc:traindb:mysql//localhost&gt; CREATE SYNOPSIS order_products_syn FROM MODEL INSTANCE tgan LIMIT 1000;
+0: jdbc:traindb:mysql//localhost&gt; SHOW MODELS;
++-------+-----------+-----------------+----------------+--------------------------------+-----------------+--------------+---------+
+| model | modeltype | schema          | table          | columns                        | base_table_rows | trained_rows | options |
++-------+-----------+-----------------+----------------+--------------------------------+-----------------+--------------+---------+
+| tgan  | tablegan  | instacart_small | order_products | [reordered, add_to_cart_order] | 1384617         | 1384617      | {}      |
++-------+-----------+-----------------+----------------+--------------------------------+-----------------+--------------+---------+
+</code></pre>
+<h3 id="&#xC2DC;&#xB189;&#xC2DC;&#xC2A4;-&#xC0DD;&#xC131;-&#xC870;&#xD68C;">&#xC2DC;&#xB189;&#xC2DC;&#xC2A4; &#xC0DD;&#xC131;, &#xC870;&#xD68C;</h3>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD559;&#xC2B5;&#xD55C; &#xBAA8;&#xB378;&#xB85C;&#xBD80;&#xD130; &#xC2DC;&#xB189;&#xC2DC;&#xC2A4;&#xB97C; &#xC0DD;&#xC131;&#xD55C; &#xD6C4; &#xC870;&#xD68C;&#xD558;&#xB294; &#xC608;&#xC774;&#xB2E4;.</p>
+<pre><code class="lang-console">0: jdbc:traindb:mysql//localhost&gt; CREATE SYNOPSIS order_products_syn FROM MODEL tgan LIMIT 100000;
 No rows affected (#.## seconds)
 0: jdbc:traindb:mysql//localhost&gt; SHOW SYNOPSES;
-+--------------------+----------------+-----------+----------------+---------------------------------+
-| synopsis           | model_instance | schema    | table          | columns                         |
-+--------------------+----------------+-----------+----------------+---------------------------------+
-| order_products_syn | tgan           | instacart | order_products | [product_id, add_to_cart_order] |
-+--------------------+----------------+-----------+----------------+---------------------------------+
-0: jdbc:traindb:mysql//localhost&gt; SELECT count(*) as c2 FROM instacart.order_products_syn;
-+------+
-| c2   |
-+------+
-| 1000 |
-+------+
++--------------------+-------+-----------+----------------+--------------------------------+------+------------+
+| synopsis           | model | schema    | table          | columns                        | rows | ratio      |
++--------------------+-------+-----------+----------------+--------------------------------+------+------------+
+| order_products_syn | tgan  | instacart | order_products | [reordered, add_to_cart_order] | 1000 | 0.00072222 |
++--------------------+-------+-----------+----------------+--------------------------------+------+------------+
+</code></pre>
+<h3 id="&#xADFC;&#xC0AC;-&#xC9C8;&#xC758;-&#xC218;&#xD589;">&#xADFC;&#xC0AC; &#xC9C8;&#xC758; &#xC218;&#xD589;</h3>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xADFC;&#xC0AC; &#xC9C8;&#xC758;&#xB97C; &#xC218;&#xD589;&#xD558;&#xB294; &#xC608;&#xC774;&#xB2E4;.
+&#xC9D1;&#xACC4; &#xC9C8;&#xC758;&#xC5D0; &#xB300;&#xD574; SELECT &#xB4A4;&#xC5D0; APPROXIMATE &#xD0A4;&#xC6CC;&#xB4DC;&#xB97C; &#xBD99;&#xC5EC; &#xADFC;&#xC0AC; &#xC9C8;&#xC758;&#xB97C; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xB2E4;.
+&#xADF8;&#xB7EC;&#xBA74; &#xC6D0;&#xBCF8; &#xD14C;&#xC774;&#xBE14;&#xC774; &#xC544;&#xB2CC; &#xC2DC;&#xB189;&#xC2DC;&#xC2A4;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xC9C8;&#xC758; &#xACB0;&#xACFC;&#xB97C; &#xADFC;&#xC0AC;&#xD558;&#xAC8C; &#xB418;&#xBA70;, &#xADFC;&#xC0AC; &#xACB0;&#xACFC;&#xB294; &#xC0DD;&#xC131;&#xB41C; &#xC2DC;&#xB189;&#xC2DC;&#xC2A4;&#xC5D0; &#xB530;&#xB77C; &#xB2E4;&#xB97C; &#xAC83;&#xC774;&#xB2E4;.</p>
+<pre><code class="lang-console">0: jdbc:traindb:mysql//localhost&gt; SELECT APPROXIMATE sum(reordered) FROM instacart_small.order_products;
+</code></pre>
+<p>&#xC544;&#xB798;&#xC758; &#xC815;&#xD655; &#xC9C8;&#xC758;&#xC640; &#xACB0;&#xACFC;&#xB97C; &#xBE44;&#xAD50;&#xD574; &#xBCF4;&#xAE30; &#xBC14;&#xB780;&#xB2E4;.</p>
+<pre><code class="lang-console">0: jdbc:traindb:mysql//localhost&gt; SELECT sum(reordered) FROM instacart_small.order_products;
 </code></pre>
 
                                 
@@ -494,7 +506,7 @@ No rows affected (#.## seconds)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CLI 사용 예","level":"1.2.2","depth":2,"next":{"title":"JDBC 사용 예","level":"1.2.3","depth":2,"path":"tutorial/EXAMPLES_JDBC.md","ref":"tutorial/EXAMPLES_JDBC.md","articles":[]},"previous":{"title":"시작하기","level":"1.2.1","depth":2,"path":"tutorial/GETTING_STARTED.md","ref":"tutorial/GETTING_STARTED.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions-select"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"highlight":{},"versions":{"options":[{"value":"https://traindb-project.github.io/traindb-doc/ko/","text":"TrainDB v0.5","selected":true},{"value":"https://traindb-project.github.io/traindb-doc/ko/0.2","text":"TrainDB v0.2"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"tutorial/EXAMPLES_CLI.md","mtime":"2022-08-10T15:29:57.769Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-16T16:48:58.725Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CLI 사용 예","level":"1.2.2","depth":2,"next":{"title":"JDBC 사용 예","level":"1.2.3","depth":2,"path":"tutorial/EXAMPLES_JDBC.md","ref":"tutorial/EXAMPLES_JDBC.md","articles":[]},"previous":{"title":"시작하기","level":"1.2.1","depth":2,"path":"tutorial/GETTING_STARTED.md","ref":"tutorial/GETTING_STARTED.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions-select"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"highlight":{},"versions":{"options":[{"value":"https://traindb-project.github.io/traindb-doc/ko/","text":"TrainDB v0.5","selected":true},{"value":"https://traindb-project.github.io/traindb-doc/ko/0.2","text":"TrainDB v0.2"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"tutorial/EXAMPLES_CLI.md","mtime":"2022-08-17T00:56:44.737Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-17T00:57:28.657Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
