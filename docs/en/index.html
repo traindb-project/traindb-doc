@@ -61,7 +61,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="GETTING_STARTED.html" />
+    <link rel="next" href="TUTORIAL.html" />
     
     
 
@@ -113,9 +113,23 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="GETTING_STARTED.html">
+        <li class="chapter " data-level="1.2" data-path="TUTORIAL.html">
             
-                <a href="GETTING_STARTED.html">
+                <a href="TUTORIAL.html">
+            
+                    
+                    Tutorial
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="tutorial/GETTING_STARTED.md">
+            
+                <span>
             
                     
                     Getting Started
@@ -123,6 +137,37 @@
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="tutorial/EXAMPLES_CLI.md">
+            
+                <span>
+            
+                    
+                    Examples: Using CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="tutorial/EXAMPLES_JDBC.md">
+            
+                <span>
+            
+                    
+                    Examples: Using JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -140,12 +185,187 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="sql/SELECT.html">
+        <li class="chapter " data-level="1.3.1" data-path="sql/CREATE_MODELTYPE.md">
             
-                <a href="sql/SELECT.html">
+                <span>
+            
+                    
+                    CREATE MODELTYPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="sql/CREATE_SYNOPSIS.md">
+            
+                <span>
+            
+                    
+                    CREATE SYNOPSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="sql/DESCRIBE.md">
+            
+                <span>
+            
+                    
+                    DESCRIBE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="sql/DROP_MODEL.md">
+            
+                <span>
+            
+                    
+                    DROP MODEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="sql/DROP_MODELTYPE.md">
+            
+                <span>
+            
+                    
+                    DROP MODELTYPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="sql/DROP_SYNOPSIS.md">
+            
+                <span>
+            
+                    
+                    DROP SYNOPSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="sql/SELECT.md">
+            
+                <span>
             
                     
                     SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="sql/SHOW.md">
+            
+                <span>
+            
+                    
+                    SHOW
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="sql/TRAIN_MODEL.md">
+            
+                <span>
+            
+                    
+                    TRAIN MODEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="sql/USE.md">
+            
+                <span>
+            
+                    
+                    USE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="DEV_GUIDE.html">
+            
+                <a href="DEV_GUIDE.html">
+            
+                    
+                    Developer Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="dev_guide/SQL_REG_TEST.md">
+            
+                <span>
+            
+                    
+                    How to Run SQL Regression Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="dev_guide/CODING_STYLE_GUIDE.md">
+            
+                <span>
+            
+                    
+                    Coding Style Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="dev_guide/GITBOOK_MANUAL.md">
+            
+                <span>
+            
+                    
+                    How to Write GitBook Docs
             
                 </a>
             
@@ -204,9 +424,45 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="introduction">Introduction</h1>
-<h2 id="whait-is-traindb">Whait is TrainDB?</h2>
-<h2 id="traindb-features">TrainDB Features</h2>
-<h2 id="traindb-architecture">TrainDB Architecture</h2>
+<h2 id="what-is-traindb">What is TrainDB?</h2>
+<p>TrainDB is an ML-model based approximate DBMS query engine that provides approximate but accurate enough query results based on machine learning models in order to support exploratory data analysis for timely business decision-making.</p>
+<p><img src="images/concept.png" alt="TrainDB Concept"></p>
+<p>TrainDB&apos;s key features are as follows:</p>
+<ul>
+<li>Providing approximate query results without access to base tables after ML model training</li>
+<li>Remote ML model training/serving with Kubeflow-based cloud ML model serving framework</li>
+<li>Various DBMS data sources support </li>
+</ul>
+<h2 id="traindbs-main-rd-topics">TrainDB&apos;s Main R&amp;D Topics</h2>
+<ol>
+<li><a href="https://github.com/traindb-project/traindb" target="_blank">TrainDB: an ML-model based approximate query processing engine</a><ul>
+<li>SQL-like approximate query language</li>
+<li>Approximate query processing using synopsis data that are synthesized by ML models</li>
+<li>Approximate query processing using ML inference models</li>
+<li>Various DBMS data sources support via extensible data source adapters</li>
+</ul>
+</li>
+<li><a href="https://github.com/traindb-project/traindb-model" target="_blank">ML model library for approximate query processing</a><ul>
+<li>Synopsis generative ML models + inferential ML models<ul>
+<li>Synopsis generative ML models: GAN-based models(e.g., TableGAN, OCT-GAN), score-based generative models</li>
+<li>Inferential ML models: mixture density networks(MDN), relational sum-product networks(RSPN)</li>
+</ul>
+</li>
+<li>Error estimation for approximate query evaluation</li>
+<li>Continual learning to update base table changes</li>
+</ul>
+</li>
+<li><a href="https://github.com/traindb-project/traindb-ml" target="_blank">Cloud ML model serving framework</a><ul>
+<li>A framework for training/serving ML models in remote GPU servers</li>
+<li>Kubeflow-based ML model registry/training/serving support</li>
+</ul>
+</li>
+<li><a href="https://github.com/traindb-project/aqp-tav" target="_blank">Visual Exploratory Data Analysis Support Tools for TrainDB</a><ul>
+<li>Approximation query result visualization for exploratory data analysis</li>
+<li>Visual OLAP analysis support for multi-dimensional data analysis</li>
+</ul>
+</li>
+</ol>
 
                                 
                                 </section>
@@ -235,7 +491,7 @@
             
                 
                 
-                <a href="GETTING_STARTED.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Getting Started">
+                <a href="TUTORIAL.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Tutorial">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -246,7 +502,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Getting Started","level":"1.2","depth":1,"path":"GETTING_STARTED.md","ref":"GETTING_STARTED.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions-select"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"highlight":{},"versions":{"options":[{"value":"https://traindb-project.github.io/traindb-doc/en/","text":"TrainDB v0.5","selected":true},{"value":"https://traindb-project.github.io/traindb-doc/en/0.2","text":"TrainDB v0.2"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"README.md","mtime":"2022-08-10T14:01:45.284Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-17T13:21:04.648Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Tutorial","level":"1.2","depth":1,"path":"TUTORIAL.md","ref":"TUTORIAL.md","articles":[{"title":"Getting Started","level":"1.2.1","depth":2,"path":"tutorial/GETTING_STARTED.md","ref":"tutorial/GETTING_STARTED.md","articles":[]},{"title":"Examples: Using CLI","level":"1.2.2","depth":2,"path":"tutorial/EXAMPLES_CLI.md","ref":"tutorial/EXAMPLES_CLI.md","articles":[]},{"title":"Examples: Using JDBC","level":"1.2.3","depth":2,"path":"tutorial/EXAMPLES_JDBC.md","ref":"tutorial/EXAMPLES_JDBC.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["versions-select"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"highlight":{},"versions":{"options":[{"value":"https://traindb-project.github.io/traindb-doc/en/","text":"TrainDB v0.5","selected":true},{"value":"https://traindb-project.github.io/traindb-doc/en/0.2","text":"TrainDB v0.2"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TrainDB Documentation","links":{"sidebar":{"TrainDB Project":"https://github.com/traindb-project"}},"gitbook":"*","description":"TrainDB Documentation","extension":null},"file":{"path":"README.md","mtime":"2022-08-23T08:34:43.240Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-23T08:57:43.195Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
