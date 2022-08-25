@@ -12,39 +12,39 @@ This document focuses on the SELECT APPROXIMATE statement for approximate querie
 ### Syntax
 
 #### select
-<object type="image/svg+xml" data="./diagram/select1.rrd.svg" class="object"></object>
-<object type="image/svg+xml" data="./diagram/select2.rrd.svg" class="object"></object>
-<object type="image/svg+xml" data="./diagram/select3.rrd.svg" class="object"></object>
-<object type="image/svg+xml" data="./diagram/select4.rrd.svg" class="object"></object>
-<object type="image/svg+xml" data="./diagram/select5.rrd.svg" class="object"></object>
-<object type="image/svg+xml" data="./diagram/select6.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/select1.rrd.svg"/>
+<embed type="image/svg+xml" src="./diagram/select2.rrd.svg"/>
+<embed type="image/svg+xml" src="./diagram/select3.rrd.svg"/>
+<embed type="image/svg+xml" src="./diagram/select4.rrd.svg"/>
+<embed type="image/svg+xml" src="./diagram/select5.rrd.svg"/>
+<embed type="image/svg+xml" src="./diagram/select6.rrd.svg"/>
 
 #### selectItemList
-<object type="image/svg+xml" data="./diagram/selectItemList.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/selectItemList.rrd.svg"/>
 
 #### selectItem
-<object type="image/svg+xml" data="./diagram/selectItem.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/selectItem.rrd.svg"/>
 
 #### tableExpression
-<object type="image/svg+xml" data="./diagram/tableExpression.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/tableExpression.rrd.svg"/>
 
 #### tableReference
-<object type="image/svg+xml" data="./diagram/tableReference.rrd.svg" class="object" width="100%" height="100%"></object>
+<embed type="image/svg+xml" src="./diagram/tableReference.rrd.svg" width="100%" height="100%"/>
 
 #### tablePrimary
-<object type="image/svg+xml" data="./diagram/tablePrimary.rrd.svg" class="object" width="100%" height="100%"></object>
+<embed type="image/svg+xml" src="./diagram/tablePrimary.rrd.svg" width="100%" height="100%"/>
 
 #### groupItemList
-<object type="image/svg+xml" data="./diagram/groupItemList.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/groupItemList.rrd.svg"/>
 
 #### groupItem
-<object type="image/svg+xml" data="./diagram/groupItem.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/groupItem.rrd.svg"/>
 
 #### orderItemList
-<object type="image/svg+xml" data="./diagram/orderItemList.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/orderItemList.rrd.svg"/>
 
 #### orderItem
-<object type="image/svg+xml" data="./diagram/orderItem.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/orderItem.rrd.svg"/>
 
 
 ### Keywords and Parameters

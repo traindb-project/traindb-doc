@@ -8,7 +8,7 @@ Use the DROP SYNOPSIS statement to remove the synopsis table from the database.
 ### Syntax
 
 #### dropSynopsis
-<object type="image/svg+xml" data="./diagram/dropSynopsis.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/dropSynopsis.rrd.svg"/>
 
 
 ### Keywords and Parameters

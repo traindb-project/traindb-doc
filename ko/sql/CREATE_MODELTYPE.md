@@ -10,11 +10,11 @@ CREATE MODELTYPE 문은 모델 타입을 정의하는 데 사용한다.
 ### 구문
 
 #### createModeltype
-<object type="image/svg+xml" data="./diagram/createModeltype1.rrd.svg" class="object" width="100%" height="100%"></object>
-<object type="image/svg+xml" data="./diagram/createModeltype2.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/createModeltype1.rrd.svg" width="100%" height="100%"/>
+<embed type="image/svg+xml" src="./diagram/createModeltype2.rrd.svg"/>
 
 #### modeltypeSpecClause
-<object type="image/svg+xml" data="./diagram/modeltypeSpecClause.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/modeltypeSpecClause.rrd.svg"/>
 
 
 ### 키워드 및 파라미터

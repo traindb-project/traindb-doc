@@ -8,7 +8,7 @@ Use the DESCRIBE statement to display information about columns in a given table
 ### Syntax
 
 #### show
-<object type="image/svg+xml" data="./diagram/describe.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/describe.rrd.svg"/>
 
 
 ### Keywords and Parameters

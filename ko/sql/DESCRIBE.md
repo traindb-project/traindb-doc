@@ -8,7 +8,7 @@ DESCRIBE 문은 테이블의 구조를 조회하는 데 사용하는 구문이�
 ### 구문
 
 #### show
-<object type="image/svg+xml" data="./diagram/describe.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/describe.rrd.svg"/>
 
 
 ### 키워드 및 파라미터

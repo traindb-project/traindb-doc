@@ -8,7 +8,7 @@ Use the SHOW statement to list the objects including modeltypes, models, and syn
 ### Syntax
 
 #### show
-<object type="image/svg+xml" data="./diagram/show.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/show.rrd.svg"/>
 
 
 ### Keywords and Parameters

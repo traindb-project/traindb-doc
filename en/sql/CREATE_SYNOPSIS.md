@@ -10,8 +10,8 @@ The synopsis table consists of the columns that specified when training the gene
 ### Syntax
 
 #### createSynopsis
-<object type="image/svg+xml" data="./diagram/createSynopsis1.rrd.svg" class="object"></object>
-<object type="image/svg+xml" data="./diagram/createSynopsis2.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/createSynopsis1.rrd.svg"/>
+<embed type="image/svg+xml" src="./diagram/createSynopsis2.rrd.svg"/>
 
 
 ### Keywords and Parameters

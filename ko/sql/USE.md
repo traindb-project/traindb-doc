@@ -8,7 +8,7 @@ USE 문은 기본 스키마를 변경하는 구문이다. 테이블을 지정할
 ### 구문
 
 #### use
-<object type="image/svg+xml" data="./diagram/use.rrd.svg" class="object"></object>
+<embed src="./diagram/use.rrd.svg" type="image/svg+xml"/>
 
 
 ### 키워드 및 파라미터

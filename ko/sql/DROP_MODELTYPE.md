@@ -8,7 +8,7 @@ DROP MODELTYPE 문은 정의되어 있는 모델 타입을 삭제하는 데 사�
 ### 구문
 
 #### dropModeltype
-<object type="image/svg+xml" data="./diagram/dropModeltype.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/dropModeltype.rrd.svg"/>
 
 
 ### 키워드 및 파라미터

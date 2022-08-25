@@ -8,7 +8,7 @@ DROP MODEL 문은 학습되어 있는 모델을 삭제하는 데 사용한다.
 ### 구문
 
 #### dropModel
-<object type="image/svg+xml" data="./diagram/dropModel.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/dropModel.rrd.svg"/>
 
 
 ### 키워드 및 파라미터

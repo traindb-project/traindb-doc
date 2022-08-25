@@ -9,7 +9,7 @@ This statement removes only the model metadata in the catalog store, and actual 
 ### Syntax
 
 #### dropModel
-<object type="image/svg+xml" data="./diagram/dropModel.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/dropModel.rrd.svg"/>
 
 
 ### Keywords and Parameters

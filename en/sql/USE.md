@@ -8,7 +8,7 @@ The USE statement sets the named schema as the default (current) schema.
 ### Syntax
 
 #### use
-<object type="image/svg+xml" data="./diagram/use.rrd.svg" class="object"></object>
+<embed src="./diagram/use.rrd.svg" type="image/svg+xml"/>
 
 
 ### Keywords and Parameters

@@ -9,11 +9,11 @@ A modeltype can be separately trained on individual dataset, and hyperparameters
 ### Syntax
 
 #### createModeltype
-<object type="image/svg+xml" data="./diagram/createModeltype1.rrd.svg" class="object" width="100%" height="100%"></object>
-<object type="image/svg+xml" data="./diagram/createModeltype2.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/createModeltype1.rrd.svg" width="100%" height="100%"/>
+<embed type="image/svg+xml" src="./diagram/createModeltype2.rrd.svg"/>
 
 #### modeltypeSpecClause
-<object type="image/svg+xml" data="./diagram/modeltypeSpecClause.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/modeltypeSpecClause.rrd.svg"/>
 
 
 ### Keywords and Parameters

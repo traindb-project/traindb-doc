@@ -8,7 +8,7 @@ SHOW 문은 모델 타입, 모델, 시놉시스 등 존재하는 객체들의 �
 ### 구문
 
 #### show
-<object type="image/svg+xml" data="./diagram/show.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/show.rrd.svg"/>
 
 
 ### 키워드 및 파라미터

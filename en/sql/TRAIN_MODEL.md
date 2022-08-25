@@ -8,20 +8,20 @@ Use the TRAIN MODEL statement to build a model by training a modeltype on the co
 ### Syntax
 
 #### trainModel
-<object type="image/svg+xml" data="./diagram/trainModel1.rrd.svg" class="object"></object>
-<object type="image/svg+xml" data="./diagram/trainModel2.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/trainModel1.rrd.svg"/>
+<embed type="image/svg+xml" src="./diagram/trainModel2.rrd.svg"/>
 
 #### trainTargetClause
-<object type="image/svg+xml" data="./diagram/trainTargetClause.rrd.svg" class="object" width="100%" height="100%"></object>
+<embed type="image/svg+xml" src="./diagram/trainTargetClause.rrd.svg" width="100%" height="100%"/>
 
 #### columnNameList
-<object type="image/svg+xml" data="./diagram/columnNameList.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/columnNameList.rrd.svg"/>
 
 #### trainModelOptionsClause
-<object type="image/svg+xml" data="./diagram/trainModelOptionsClause.rrd.svg" class="object" width="100%" height="100%"></object>
+<embed type="image/svg+xml" src="./diagram/trainModelOptionsClause.rrd.svg" width="100%" height="100%"/>
 
 #### optionKeyValue
-<object type="image/svg+xml" data="./diagram/optionKeyValue.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/optionKeyValue.rrd.svg"/>
 
 
 ### Keywords and Parameters

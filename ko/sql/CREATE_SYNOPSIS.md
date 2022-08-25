@@ -10,8 +10,8 @@ CREATE SYNOPSIS 문은 학습되어 있는 데이터 시놉시스 생성형 모�
 ### 구문
 
 #### createSynopsis
-<object type="image/svg+xml" data="./diagram/createSynopsis1.rrd.svg" class="object"></object>
-<object type="image/svg+xml" data="./diagram/createSynopsis2.rrd.svg" class="object"></object>
+<embed type="image/svg+xml" src="./diagram/createSynopsis1.rrd.svg"/>
+<embed type="image/svg+xml" src="./diagram/createSynopsis2.rrd.svg"/>
 
 
 ### 키워드 및 파라미터
