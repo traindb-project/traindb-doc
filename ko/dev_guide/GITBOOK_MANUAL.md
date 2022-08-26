@@ -19,13 +19,6 @@ $ npm install gitbook-cli@2.1.2 --global
 $ gitbook --version
 ```
 
-(선택) GitBook을 e-book으로 만들고 싶다면 추가로 calibre를 설치하면 다음과 같이 pdf 문서로 만들 수 있다.
-
-```console
-$ brew install calibre
-$ gitbook pdf ./ ./mybook.pdf
-```
-
 마지막으로 본 문서화 사이트의 github 저장소를 복제한다.
 
 ```console

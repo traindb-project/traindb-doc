@@ -19,13 +19,6 @@ $ npm install gitbook-cli@2.1.2 --global
 $ gitbook --version
 ```
 
-(Optional) If you want to make GitBook an e-book, you can create a pdf document by installing calibre as follows.
-
-```console
-$ brew install calibre
-$ gitbook pdf ./ ./mybook.pdf
-```
-
 Finally, clone our ```traindb-doc``` repository.
 
 ```console
