@@ -13,6 +13,9 @@ This document focuses on the ``SELECT APPROXIMATE`` statement for approximate qu
 Syntax
 ------
 
+Diagram
+~~~~~~~
+
 **select**
 
 .. only:: html
@@ -153,11 +156,9 @@ Specify ``APPROXIMATE`` to indicate the query is an approximate query.
 If the following conditions are satisfied, the query is processed as an approximate query.
 Otherwise, this keyword is ignored and the query is processed as an exact query.
 * ``selectItemList`` includes aggregate functions that support approximation queries. 
-* There is a model or a synopsis that learned the columns specified in selectItemList.
+* There is a model or a synopsis that learned the columns specified in ``selectItemList``.
 
 Currently, ``avg``, ``sum``, ``count``, ``stddev``, and ``variance`` aggregate functions are supported for approximate queries.
-
-Aggregation functions currently supported for approximation queries include The ``GROUP BY``, ``HAVING``, and ``ORDER BY`` clauses can be used together in an approximate query.
 
 The ``GROUP BY``, ``HAVING``, and ``ORDER BY`` clauses can be used together in an approximate query.
 
