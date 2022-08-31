@@ -2,5 +2,5 @@
 
 This repository is for TrainDB documentation, which is served at:
 
-* KO: https://traindb-project.github.io/traindb-doc/ko/
-* EN: https://traindb-project.github.io/traindb-doc/en/
+* KO: https://traindb-doc.readthedocs.io/ko/latest/
+* EN: https://traindb-doc.readthedocs.io/en/latest/
