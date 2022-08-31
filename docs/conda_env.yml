@@ -1,0 +1,13 @@
+name: root
+channels:
+  - defaults
+dependencies:
+  - pip=21.1
+  - python=3.7
+  - librsvg
+  - pip:
+    - sphinx_autodoc_typehints
+    - sphinx>=4.2
+    - sphinx_rtd_theme>=1.0
+    - sphinx_copybutton
+    - sphinxcontrib-svg2pdfconverter
