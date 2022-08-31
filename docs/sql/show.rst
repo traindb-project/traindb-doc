@@ -9,6 +9,9 @@ Use the ``SHOW`` statement to list the objects including modeltypes, models, and
 Syntax
 ------
 
+Diagram
+~~~~~~~
+
 **show**
 
 .. only:: html
@@ -23,7 +26,7 @@ Syntax
 
 
 Keywords and Parameters
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 **MODELTYPES**
 
