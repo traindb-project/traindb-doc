@@ -28,6 +28,7 @@ Diagram
     <embed type="image/svg+xml" src="../_static/rrd/select4.rrd.svg"/>
     <embed type="image/svg+xml" src="../_static/rrd/select5.rrd.svg"/>
     <embed type="image/svg+xml" src="../_static/rrd/select6.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/select7.rrd.svg"/>
 
 .. only:: latex
 
@@ -37,6 +38,7 @@ Diagram
   .. image:: ../_static/rrd/select4.rrd.*
   .. image:: ../_static/rrd/select5.rrd.*
   .. image:: ../_static/rrd/select6.rrd.*
+  .. image:: ../_static/rrd/select7.rrd.*
 
 **selectItemList**
 
@@ -190,6 +192,15 @@ If the ``HAVING`` clause is omitted, all grouped results are retrieved.
 
 The ``ORDER BY`` clause sorts retrieved rows by the specified order of the expressions in ``orderItemList``.
 If the ``ORDER BY`` clause is omitted, the retrieved rows are retuned in an arbitrary order.
+
+**WITHIN numeric_literal SECONDS**
+
+The ``WITHIN`` clause specifies an execution time limit of the input approximate query.
+The query processing time is not guaranteed, but the specified time limit serves as an optimization hint for selecting synopses or models to be used. Currently, a simple policy that selects a synopsis according to the number of rows has been implemented, and the number of rows per second can be adjusted with a configuration parameter.
+
+**SYNOPSIS hint**
+
+A synopsis to be used for approximate query processing can be specified as a hint, such as ``SELECT /*+ SYNOPSIS(synopsis_name) */ APPROXIMATE``. If the specified synopsis exists and can be used to process the input query, the query will be processed using the synopsis.
 
 
 Examples

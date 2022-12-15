@@ -2,14 +2,14 @@ TrainDB Documentation
 =====================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Introduction
 
    intro/traindb
    intro/rnd_topics
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Tutorial
 
    tutorial/getting_started
@@ -32,7 +32,13 @@ TrainDB Documentation
    sql/use
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :caption: Configuration
+
+   configuration/traindb_properties
+
+.. toctree::
+   :maxdepth: 1
    :caption: Developer Guide
  
    dev_guide/sql_reg_test

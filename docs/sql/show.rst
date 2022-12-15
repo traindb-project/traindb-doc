@@ -48,6 +48,14 @@ Specify ``SCHEMAS`` to list the schemas in the connected data source.
 
 Specify ``SCHEMAS`` to list the tables in the current schema.
 
+**QUERYLOGS**
+
+Specify ``QUERYLOGS`` to list the queries that have been executed. It works only if it is set to record the query logs in the configuration.
+
+**TASKS**
+
+Specify ``TASKS`` to list the tasks of the queries that have been executed. It works only if it is set to record the task traces in the configuration.
+
 
 Examples
 --------

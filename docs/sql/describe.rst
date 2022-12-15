@@ -12,7 +12,7 @@ Syntax
 Diagram
 ~~~~~~~
 
-**show**
+**describe**
 
 .. only:: html
 

@@ -1,9 +1,10 @@
 name: root
 channels:
+  - conda-forge
   - defaults
 dependencies:
-  - pip=21.1
-  - python=3.7
+  - pip>=21.1
+  - python>=3.7
   - librsvg
   - pip:
     - sphinx_autodoc_typehints

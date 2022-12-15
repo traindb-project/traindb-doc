@@ -18,8 +18,11 @@ TrainDB ML Model Library
 
 * Python 3.x
 * `SDGym <https://github.com/sdv-dev/SDGym>`_
+
   * Using ``pip``: pip install pomegranate==0.14.6 sdgym==0.5.0
   * Using ``conda``: conda install -c sdv-dev -c conda-forge sdgym
+
+* `SPFlow <https://github.com/SPFlow/SPFlow>`_
 
 
 Installation
@@ -44,16 +47,16 @@ You can build TrainDB using Maven as shown below.
   $ cd traindb
   $ mvn package
 
-Then, the file ``traindb-0.5.0.tar.gz`` is created in the ``traindb-assembly/target`` directory. You can unzip it as shown below.
+Then, the file ``traindb-1.0.tar.gz`` is created in the ``traindb-assembly/target`` directory. You can unzip it as shown below.
 
 .. code-block:: console
 
-  $ tar xvfz traindb-assembly/target/traindb-0.5.0.tar.gz
+  $ tar xvfz traindb-assembly/target/traindb-1.0.tar.gz
 
 To use ML models in TrainDB, you need to add model libraries.
 You can download our model library with the following command.
 
 .. code-block:: console
 
-  $ cd traindb-assembly/target/traindb-0.5.0
+  $ cd traindb-assembly/target/traindb-1.0
   $ svn co https://github.com/traindb-project/traindb-model/trunk/models

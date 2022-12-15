@@ -88,3 +88,9 @@ The following statement creates a local synopsis generative modeltype ``tablegan
 .. code-block:: console
 
   CREATE MODELTYPE tablegan FOR SYNOPSIS AS LOCAL CLASS 'TableGAN' IN 'models/TableGAN.py';
+
+The following statement creates a local inferential modeltype ``rspn`` as the class ``RSPN`` in the directory path 'models/RSPN.py'.
+
+.. code-block:: console
+
+  CREATE MODELTYPE rspn FOR INFERENCE AS LOCAL CLASS 'RSPN' IN 'models/RSPN.py';
