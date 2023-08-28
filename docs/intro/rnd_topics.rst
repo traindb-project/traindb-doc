@@ -21,7 +21,7 @@ TrainDB's Main R&D Topics
 #. `Cloud ML model serving framework <https://github.com/traindb-project/traindb-ml>`_
 
    * A framework for training/serving ML models in remote GPU servers
-   * Kubeflow-based ML model registry/training/serving support
+   * ML model registry/training/serving support
 
 #. `Visual Exploratory Data Analysis Support Tools for TrainDB <https://github.com/traindb-project/aqp-tav>`_
 

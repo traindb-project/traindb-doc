@@ -19,10 +19,12 @@ Diagram
   .. raw:: html
 
     <embed type="image/svg+xml" src="../_static/rrd/show.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/showFilterCondition.rrd.svg"/>
 
 .. only:: latex
 
   .. image:: ../_static/rrd/show.rrd.*
+  .. image:: ../_static/rrd/showFilterCondition.rrd.*
 
 
 Keywords and Parameters
@@ -35,6 +37,10 @@ Specify ``MODELTYPES`` to list the modeltypes.
 **MODELS**
 
 Specify ``MODELS`` to list the trained models.
+
+**HYPERPARAMETERS**
+
+Specify ``HYPERPARAMETERS`` to list the hyperparameters used in modeltypes.
 
 **SYNOPSES**
 
@@ -55,6 +61,14 @@ Specify ``QUERYLOGS`` to list the queries that have been executed. It works only
 **TASKS**
 
 Specify ``TASKS`` to list the tasks of the queries that have been executed. It works only if it is set to record the task traces in the configuration.
+
+**TRAININGS**
+
+Specify ``TRAININGS`` to list the model training status.
+
+**showFilterCondition**
+
+Specifies filter conditions to retrieve only the rows which satisfy the conditions.
 
 
 Examples
@@ -78,6 +92,21 @@ The following statement lists the trained models.
 
   SHOW MODELS;
 
+Listing Hyperparameters
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The following statement lists the hyperparameters of the modeltype ``ctgan``. 
+
+.. code-block:: console
+
+  SHOW HYPERPARAMETERS WHERE modeltype_name = 'ctgan';
+
+The following statement lists the hyperparameters of the modeltypes whose names contain ``gan``. 
+
+.. code-block:: console
+
+  SHOW HYPERPARAMETERS WHERE modeltype_name LIKE '%gan%';
+
 Listing Synopses
 ~~~~~~~~~~~~~~~~
 
@@ -86,3 +115,4 @@ The following statement lists the generated synopses.
 .. code-block:: console
 
   SHOW SYNOPSES;
+

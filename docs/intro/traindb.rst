@@ -9,5 +9,5 @@ TrainDB is an ML-model based approximate DBMS query engine that provides approxi
 TrainDB's key features are as follows:
 
 * Providing approximate query results without access to base tables after ML model training
-* Remote ML model training/serving with Kubeflow-based cloud ML model serving framework
+* ML model training/serving with remote ML model serving framework
 * Various DBMS data sources support 

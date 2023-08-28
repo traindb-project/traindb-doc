@@ -4,26 +4,28 @@ Getting Started
 Environment Setup
 -----------------
 
-To run TrainDB, the following environment is required. If you have insufficient permission to install, please ask your system administrator.
+To run TrainDB, the following environment is required.
+If you have insufficient permission to install, please ask your system administrator.
+TrainDB includes the TrainDB ML model library as a submodule.
+The following requirements must be satisfied for operation.
+
 
 TrainDB
 ~~~~~~~
 
 * Java 11+
 * Maven 3.x
-* SQLite3
+* SQLite3 (or other DBMS for catalog store, supported by datanucleus)
 
 TrainDB ML Model Library
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Python 3.x
-* `SDGym <https://github.com/sdv-dev/SDGym>`_
+* Python 3.8+
+* Python virtual environment manager, such as pyenv, conda (optional)
+* Packages used by ML models, such as pytorch - install requirements.txt
 
-  * Using ``pip``: pip install pomegranate==0.14.6 sdgym==0.5.0
-  * Using ``conda``: conda install -c sdv-dev -c conda-forge sdgym
-
-* `SPFlow <https://github.com/SPFlow/SPFlow>`_
-
+  * Using ``pip``: pip install -r traindb-model/requirements.txt
+  * Using ``conda``: conda install --file traindb-model/requirements.txt
 
 Installation
 ------------
@@ -35,7 +37,7 @@ The public repository of TrainDB is `https://github.com/traindb-project/traindb 
 
 .. code-block:: console
 
-  $ git clone https://github.com/traindb-project/traindb.git
+  $ git clone --recurse-submodules https://github.com/traindb-project/traindb.git
 
 Build
 ~~~~~
@@ -47,16 +49,9 @@ You can build TrainDB using Maven as shown below.
   $ cd traindb
   $ mvn package
 
-Then, the file ``traindb-1.0.tar.gz`` is created in the ``traindb-assembly/target`` directory. You can unzip it as shown below.
+Then, the file ``traindb-1.5.tar.gz`` is created in the ``traindb-assembly/target`` directory. You can unzip it as shown below.
 
 .. code-block:: console
 
-  $ tar xvfz traindb-assembly/target/traindb-1.0.tar.gz
+  $ tar xvfz traindb-assembly/target/traindb-1.5.tar.gz
 
-To use ML models in TrainDB, you need to add model libraries.
-You can download our model library with the following command.
-
-.. code-block:: console
-
-  $ cd traindb-assembly/target/traindb-1.0
-  $ svn co https://github.com/traindb-project/traindb-model/trunk/models
