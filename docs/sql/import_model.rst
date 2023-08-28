@@ -15,7 +15,7 @@ Syntax
 Diagram
 ~~~~~~~
 
-**exportModel**
+**importModel**
 
 .. only:: html
 
