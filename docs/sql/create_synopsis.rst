@@ -41,19 +41,19 @@ This is an identifier that specifies the name of the synopsis to be created.
 
 This is an identifier that specifies the name of the synopsis generative model.
 
-**LIMIT limitNumber**
+**LIMIT**
 
-Specifies the number of rows to be generated.
+Specifies the number of rows to be generated as the number of rows, or as a percentage to the number of rows in the original table.
 
 
 Examples
 --------
 
-Creating a synopsis
+Creating a Synopsis
 ~~~~~~~~~~~~~~~~~~~
 
 The following statement creates a synopsis table ``order_products_syn`` with 10,000 rows from the generative model ``tgan``.
 
 .. code-block:: console
 
-  CREATE SYNOPSIS order_products_syn FROM MODEL tgan LIMIT 10000;
+  CREATE SYNOPSIS order_products_syn FROM MODEL tgan LIMIT 10000 ROWS;

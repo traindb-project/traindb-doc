@@ -20,6 +20,9 @@ TrainDB Documentation
    :maxdepth: 1
    :caption: SQL Reference
  
+   sql/alter_model
+   sql/alter_synopsis
+   sql/analyze_synopsis
    sql/create_modeltype
    sql/create_synopsis
    sql/describe
@@ -27,6 +30,9 @@ TrainDB Documentation
    sql/drop_modeltype
    sql/drop_synopsis
    sql/export_model
+   sql/export_synopsis
+   sql/import_model
+   sql/import_synopsis
    sql/import_model
    sql/select
    sql/show
@@ -45,3 +51,4 @@ TrainDB Documentation
  
    dev_guide/sql_reg_test
    dev_guide/coding_style
+   dev_guide/how_to_add_modeltype

@@ -50,6 +50,19 @@ Diagram
 
   .. image:: ../_static/rrd/columnNameList.rrd.*
 
+**trainSampleClause**
+
+.. only:: html
+
+  .. raw:: html
+
+    <embed type="image/svg+xml" src="../_static/rrd/trainSampleClause.rrd.svg"/>
+
+.. only:: latex
+
+  .. image:: ../_static/rrd/trainSampleClause.rrd.*
+
+
 **trainModelOptionsClause**
 
 .. only:: html
@@ -102,6 +115,10 @@ This is an identifier that specifies the name of the training target table.
 **columnNameList**
 
 Specify the target columns for model training. Multiple columns can be specified as a comma-separated list.
+
+**trainSampleClause**
+
+Use the SAMPLE caluse if you want to use only a part of the original table as training data.
 
 **trainModelOptionsClause**
 

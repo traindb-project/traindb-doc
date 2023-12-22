@@ -160,7 +160,7 @@ Otherwise, this keyword is ignored and the query is processed as an exact query.
 * ``selectItemList`` includes aggregate functions that support approximation queries. 
 * There is a model or a synopsis that learned the columns specified in ``selectItemList``.
 
-Currently, ``avg``, ``sum``, ``count``, ``stddev``, and ``variance`` aggregate functions are supported for approximate queries.
+Currently, ``avg``, ``sum``, ``count``, ``stddev``, ``variance``, ``covar``, and ``corr`` aggregate functions are supported for approximate queries.
 
 The ``GROUP BY``, ``HAVING``, and ``ORDER BY`` clauses can be used together in an approximate query.
 
@@ -175,7 +175,7 @@ Additionally, aliases and column lists can be specified.
 
 **WHERE booleanExpression**
 
-Specifies search or filter conditions to retrieve only the rows which satisfy the conditions.
+Specify search or filter conditions to retrieve only the rows which satisfy the conditions.
 If the ``WHERE`` clause is omitted, all rows are retrieved.
 
 **GROUP BY groupItemList**
@@ -195,8 +195,14 @@ If the ``ORDER BY`` clause is omitted, the retrieved rows are retuned in an arbi
 
 **WITHIN numeric_literal SECONDS**
 
-The ``WITHIN`` clause specifies an execution time limit of the input approximate query.
+The ``WITHIN ~ SECONDS`` clause specifies an execution time limit of the input approximate query.
 The query processing time is not guaranteed, but the specified time limit serves as an optimization hint for selecting synopses or models to be used. Currently, a simple policy that selects a synopsis according to the number of rows has been implemented, and the number of rows per second can be adjusted with a configuration parameter.
+
+**WITHIN numeric_literal PERCENT ERROR**
+
+The ``WITHIN ~ PERCENT ERROR`` clause specifies an error rate limit of the input approximate query.
+The accuracy is not guaranteed, but the specified error rate serves as an optimization hint for selecting synopses or models to be used.
+For this clause to work, the data distribution of the synopsis must be analyzed through the ``ANALYZE SYNOPSIS`` statement so that the accuracy of the synopsis can be considered when processing queries.
 
 **SYNOPSIS hint**
 

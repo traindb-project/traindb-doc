@@ -98,7 +98,7 @@ The following statement creates a local inferential modeltype ``rspn`` as the cl
 Creating a Remote Modeltype
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following statement create a remote synopsis generative modeltype ``remote_tablegan`` as the class ``TableGAN`` in the directory path 'http://<host>:<port>'.
+The following statement creates a remote synopsis generative modeltype ``remote_tablegan`` as the class ``TableGAN`` in the directory path 'http://<host>:<port>'.
 It is assumed that the TrainDB model server is running at the specified address.
 
 .. code-block:: console

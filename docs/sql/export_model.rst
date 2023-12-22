@@ -6,7 +6,7 @@ Purpose
 
 Use the ``EXPORT MODEL`` statement to export a trained model.
 This statement compresses the trained model files and the metadata file from the catalog store together in zip format and returns it in binary format.
-Using the ``EXPORT MODEL`` statement, you can use a model in another TrainDB instance by saving its result data as a zip file in your application.
+Using the ``IMPORT MODEL`` statement, you can use a model in another TrainDB instance by saving its result data as a zip file in your application.
 
 Syntax
 ------
