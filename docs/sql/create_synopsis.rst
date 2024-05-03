@@ -37,6 +37,12 @@ Keywords and Parameters
 
 This is an identifier that specifies the name of the synopsis to be created.
 
+**AS**
+
+Specifies the format of the synopsis to be generated.
+By default, it is created as a table of the DBMS if the source DBMS is connected, otherwise it is created as an external file.
+Use the TABLE and FILE keywords if you want to explicitly specify the format of the synopsis as a table or file, respectively.
+
 **modelName**
 
 This is an identifier that specifies the name of the synopsis generative model.
