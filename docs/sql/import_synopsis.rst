@@ -21,11 +21,13 @@ Diagram
 
   .. raw:: html
 
-    <embed type="image/svg+xml" src="../_static/rrd/importSynopsis.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/importSynopsis.rrd.svg" width="100%"/>
+    <embed type="image/svg+xml" src="../_static/rrd/importSynopsis2.rrd.svg"/>
 
 .. only:: latex
 
   .. image:: ../_static/rrd/importSynopsis.rrd.*
+  .. image:: ../_static/rrd/importSynopsis2.rrd.*
 
 
 Keywords and Parameters
@@ -34,6 +36,13 @@ Keywords and Parameters
 **synopsisName**
 
 This is an identifier that specifies the name of the synopsis to be imported.
+
+**FROM**
+
+Specifies the synopsis file to be imported.
+The synopsis file can be passed in binary format after the FROM keyword.
+If TrainDB is running on the same machine, the file path to import the synopsis can be specified using the FILE clause.
+The file path to import is specified as a string literal.
 
 
 Examples
