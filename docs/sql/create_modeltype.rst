@@ -34,7 +34,7 @@ Diagram
 
   .. raw:: html
 
-    <embed type="image/svg+xml" src="../_static/rrd/modeltypeSpecClause.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/modeltypeSpecClause.rrd.svg" width="100%"/>
 
 .. only:: latex
 
@@ -62,11 +62,11 @@ This clause specifies the details of the modeltype.
 
 **LOCAL**
 
-Specify ``LOCAL`` if the modeltype is in your local machine.
+Specify ``LOCAL`` if the modeltype is on the same machine. It can be omitted.
 
 **REMOTE**
 
-Specify ``REMOTE`` if the modeltype is in a remote machine.
+Specify ``REMOTE`` if the modeltype is on a remote machine.
 
 **'modeltypeClassName'**
 
@@ -87,13 +87,13 @@ The following statement creates a local synopsis generative modeltype ``tablegan
 
 .. code-block:: console
 
-  CREATE MODELTYPE tablegan FOR SYNOPSIS AS LOCAL CLASS 'TableGAN' IN 'models/TableGAN.py';
+  CREATE MODELTYPE tablegan FOR SYNOPSIS AS CLASS 'TableGAN' IN 'models/TableGAN.py';
 
 The following statement creates a local inferential modeltype ``rspn`` as the class ``RSPN`` in the directory path 'models/RSPN.py'.
 
 .. code-block:: console
 
-  CREATE MODELTYPE rspn FOR INFERENCE AS LOCAL CLASS 'RSPN' IN 'models/RSPN.py';
+  CREATE MODELTYPE rspn FOR INFERENCE AS CLASS 'RSPN' IN 'models/RSPN.py';
 
 Creating a Remote Modeltype
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
