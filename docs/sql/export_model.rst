@@ -20,7 +20,7 @@ Diagram
 
   .. raw:: html
 
-    <embed type="image/svg+xml" src="../_static/rrd/exportModel.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/exportModel.rrd.svg" width="100%"/>
 
 .. only:: latex
 
@@ -33,6 +33,12 @@ Keywords and Parameters
 **modelName**
 
 This is an identifier that specifies the name of the model to be exported.
+
+**TO FILE**
+
+If TrainDB is running on the same machine, the file path to export the model can be specified using the TO FILE clause.
+The file path to export is specified as a string literal.
+If not specified, the exported model file is returned in binary format.
 
 
 Examples

@@ -20,7 +20,7 @@ Diagram
 
   .. raw:: html
 
-    <embed type="image/svg+xml" src="../_static/rrd/exportSynopsis.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/exportSynopsis.rrd.svg" width="100%"/>
 
 .. only:: latex
 
@@ -33,6 +33,12 @@ Keywords and Parameters
 **synopsisName**
 
 This is an identifier that specifies the name of the synopsis to be exported.
+
+**TO FILE**
+
+If TrainDB is running on the same machine, the file path to export the synopsis can be specified using the TO FILE clause.
+The file path to export is specified as a string literal.
+If not specified, the exported synopsis file is returned in binary format.
 
 
 Examples
