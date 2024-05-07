@@ -21,8 +21,8 @@ Diagram
 
   .. raw:: html
 
-    <embed type="image/svg+xml" src="../_static/rrd/createSynopsis1.rrd.svg"/>
-    <embed type="image/svg+xml" src="../_static/rrd/createSynopsis2.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/createSynopsis1.rrd.svg" width="100%"/>
+    <embed type="image/svg+xml" src="../_static/rrd/createSynopsis2.rrd.svg" width="100%"/>
 
 .. only:: latex
 
