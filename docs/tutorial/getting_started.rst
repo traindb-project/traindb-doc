@@ -20,12 +20,11 @@ TrainDB
 TrainDB ML Model Library
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Python 3.8+
-* Python virtual environment manager, such as pyenv, conda (optional)
+* Python 3.8 or 3.9
+* Python virtual environment manager, such as pyenv (optional)
 * Packages used by ML models, such as pytorch - install requirements.txt
 
   * Using ``pip``: pip install -r traindb-model/requirements.txt
-  * Using ``conda``: conda install --file traindb-model/requirements.txt
 
 Installation
 ------------
@@ -49,9 +48,9 @@ You can build TrainDB using Maven as shown below.
   $ cd traindb
   $ mvn package
 
-Then, the file ``traindb-1.5.tar.gz`` is created in the ``traindb-assembly/target`` directory. You can unzip it as shown below.
+Then, the file ``traindb-x.y.tar.gz`` is created in the ``traindb-assembly/target`` directory. You can unzip it as shown below.
 
 .. code-block:: console
 
-  $ tar xvfz traindb-assembly/target/traindb-1.5.tar.gz
+  $ tar xvfz traindb-assembly/target/traindb-*.tar.gz
 
