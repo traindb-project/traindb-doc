@@ -41,8 +41,8 @@ project = "TrainDB"
 copyright = "2021-2024, TrainDB Project"
 author = "TrainDB Contributors"
 
-release = '2.0'
-version = '2.0'
+release = '2.5'
+version = '2.5'
 
 # -- General configuration ---------------------------------------------------
 
