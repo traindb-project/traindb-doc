@@ -41,8 +41,8 @@ The following is an example of creating and querying a modeltype.
 
 .. code-block:: console
 
-  0: jdbc:traindb:mysql//localhost> CREATE MODELTYPE tablegan FOR SYNOPSIS AS LOCAL CLASS 'TableGAN' IN 'models/TableGAN.py'; 
-  No rows affected (0.231 seconds)
+  0: jdbc:traindb:mysql//localhost> CREATE MODELTYPE tablegan FOR SYNOPSIS AS CLASS 'TableGAN' IN 'models/TableGAN.py';
+  No rows affected (#.## seconds)
   0: jdbc:traindb:mysql//localhost> SHOW MODELTYPES;
   +-----------+----------+----------+----------+--------------------+
   | modeltype | category | location | class    | uri                |
