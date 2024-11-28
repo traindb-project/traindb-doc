@@ -18,7 +18,7 @@ Diagram
 
   .. raw:: html
 
-    <embed type="image/svg+xml" src="../_static/rrd/alterSynopsis.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/alterSynopsis.rrd.svg" width="100%" height="100%"/>
 
 .. only:: latex
 
