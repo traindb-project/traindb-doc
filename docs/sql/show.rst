@@ -64,7 +64,15 @@ Specify ``SCHEMAS`` to list the schemas in the connected data source.
 
 **TABLES**
 
-Specify ``SCHEMAS`` to list the tables in the current schema.
+Specify ``TABLES`` to list the tables in the current schema.
+
++**COLUMNS**
+
+Specify ``COLUMNS`` to list the table columns in the current schema.
+
+**PARTITIONS**
+
+Specify ``PARTITIONS`` to list the table partitions in the partioned tables in the current schema.
 
 **QUERYLOGS**
 
