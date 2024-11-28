@@ -10,6 +10,12 @@ Server Parameters
    * - Name
      - Value
      - Description
+   * - traindb.server.address
+     - **localhost:58000**
+     - The address of the TrainDB server
+   * - traindb.server.session.max
+     - **100**
+     - The maximumn number of sessions
    * - traindb.server.querylog
      - true, **false**
      - Whether or not the query logs are recorded
@@ -19,6 +25,12 @@ Server Parameters
    * - traindb.server.modelrunner
      - **file**, py4j
      - Which model runner to use when running local modeltypes
+   * - traindb.server.default.charset
+     - **UTF-8**
+     - Default character set
+   * - traindb.server.default.nationalcharset
+     - **UTF-8**
+     - Default national character set
 
 
 Catalog Store Parameters

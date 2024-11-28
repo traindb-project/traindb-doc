@@ -1,8 +1,8 @@
 Examples: Using JDBC
 ====================
 
-Connecting a Data Source
-------------------------
+Connecting to a Data Source
+---------------------------
 
 First, you must connect to a data source to execute an SQL statement. Since the JDBC drivers of TrainDB and the source DBMS are required, it must be included in the ``CLASSPATH``. The following is an example of connecting to the MySQL data source at localhost.
 

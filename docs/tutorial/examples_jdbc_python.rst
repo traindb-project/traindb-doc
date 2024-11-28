@@ -4,8 +4,8 @@ Examples: Using JDBC in Python
 In Python, TrainDB can also be used with a JDBC support package such as JayDeBeApi.
 You can refer a `tutorial <https://colab.research.google.com/github/traindb-project/traindb/blob/main/examples/traindb_tutorial.ipynb>`_  available in Google Colab.
 
-Connecting a Data Source
-------------------------
+Connecting to a Data Source
+---------------------------
 
 First, you must connect to a data source to execute an SQL statement.
 The following is an example of connecting to the MySQL data source at localhost.
