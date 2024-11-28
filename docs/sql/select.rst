@@ -170,6 +170,12 @@ The ``GROUP BY``, ``HAVING``, and ``ORDER BY`` clauses can be used together in a
 
 Specify the list of columns or expressions to be retrieved.
 
+**INCREMENTAL**
+
+Specify ``INCREMENTAL`` to indicate the query is an incremental query.
+When the target table to be queried is a partitioned table, the intermediate query results are returned by executing the query for each partition.
+This works on clients that support retrieving intermediate results by checking if there are more results.
+
 **FROM tableExpression**
 
 Specify the tables from which data is selected.
