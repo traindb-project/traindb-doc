@@ -18,25 +18,22 @@ Diagram
 
   .. raw:: html
 
-    <embed type="image/svg+xml" src="../_static/rrd/trainModel1.rrd.svg"/>
-    <embed type="image/svg+xml" src="../_static/rrd/trainModel2.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/trainModel1.rrd.svg" width="100%" height="100%"/>
+    <embed type="image/svg+xml" src="../_static/rrd/trainModel2.rrd.svg" width="100%" height="100%"/>
 
 .. only:: latex
 
   .. image:: ../_static/rrd/trainModel1.rrd.*
   .. image:: ../_static/rrd/trainModel2.rrd.*
 
-**trainTargetClause**
+**trainDataClause**
 
 .. only:: html
 
   .. raw:: html
 
-    <embed type="image/svg+xml" src="../_static/rrd/trainTargetClause.rrd.svg" width="100%" height="100%"/>
-
-.. only:: latex
-
-  .. image:: ../_static/rrd/trainTargetClause.rrd.*
+    <embed type="image/svg+xml" src="../_static/rrd/trainDataClause.rrd.svg" width="100%" height="100%"/>
+    <embed type="image/svg+xml" src="../_static/rrd/trainDataClause2.rrd.svg" width="100%" height="100%"/>
 
 **columnNameList**
 
@@ -49,6 +46,19 @@ Diagram
 .. only:: latex
 
   .. image:: ../_static/rrd/columnNameList.rrd.*
+
+**trainDataConditionClause**
+
+.. only:: html
+
+  .. raw:: html
+
+    <embed type="image/svg+xml" src="../_static/rrd/trainDataConditionClause.rrd.svg"/>
+
+.. only:: latex
+
+  .. image:: ../_static/rrd/trainDataConditionClause.rrd.*
+
 
 **trainSampleClause**
 
@@ -99,9 +109,22 @@ This is an identifier that specifies the name of the model to be built.
 
 This is an identifier that specifies the name of the modeltype to be used for model training.
 
-**trainTargetClause**
+**UPDATE**
+
+Use the UPDATE clause if you want to update the model by training additional data on an existing model.
+
+**LIKE**
+
+Use the LIKE clause if you want to train a model with the same columns as the existing model.
+
+**exModelName**
+
+This is an identifier that specifies the name of the existing model.
+
+**trainDataClause**
 
 Specify the target data for model training.
+To train a model on columns from multiple tables, specify them using the JOIN clause.
 
 **schemaName**
 
@@ -115,6 +138,11 @@ This is an identifier that specifies the name of the training target table.
 **columnNameList**
 
 Specify the target columns for model training. Multiple columns can be specified as a comma-separated list.
+
+**trainDataConditionClause**
+
+Specify the conditions for retrieving target data for model training.
+This clause is used to specify join conditions for training a model on multiple tables, or to filter target data for updating an existing model.
 
 **trainSampleClause**
 
@@ -154,3 +182,25 @@ By adding the ``OPTIONS`` clause, the ``epochs`` hyperparameter can also be spec
   TRAIN MODEL tgan MODELTYPE tablegan
   ON instacart.order_products(reordered, add_to_cart_order)
   OPTIONS ( 'epochs' = 100 );
+
+It is possible to train a model with data from multiple tables, as shown below.
+
+.. code-block:: console
+
+  TRAIN MODEL tgan_multi_tables MODELTYPE tablegan
+  FROM instacart.order_products(reordered, add_to_cart_order, order_id)
+  JOIN instacart.orders(order_id, order_dow)
+  ON orders.order_id = order_products.order_id;
+
+Updating a Model
+~~~~~~~~~~~~~~~~
+
+The following statements train a model ``rspn_op`` of the ``rspn`` modeltype on the columns ``reordered`` and ``add_to_cart_order`` of the ``order_products`` table in the ``instacart`` schema, then train a new model ``rspn_op_update`` by updating the model with additional data.
+
+.. code-block:: console
+
+  TRAIN MODEL rspn_op MODELTYPE rspn
+  FROM instacart.order_products(reordered, add_to_cart_order);
+
+  TRAIN MODEL rspn_op_update UPDATE rspn_op
+  ON order_products.order_id > 3000000;
