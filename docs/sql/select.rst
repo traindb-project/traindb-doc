@@ -160,7 +160,7 @@ Otherwise, this keyword is ignored and the query is processed as an exact query.
 * ``selectItemList`` includes aggregate functions that support approximation queries. 
 * There is a model or a synopsis that learned the columns specified in ``selectItemList``.
 
-Currently, ``avg``, ``sum``, ``count``, ``stddev``, ``variance``, ``covar``, and ``corr`` aggregate functions are supported for approximate queries.
+Currently, ``avg``, ``sum``, ``count``, ``stddev``, ``variance``,  ``covar(covar_pop, covar_samp)``, ``corr``, ``min``, ``max``, ``mode``, and ``percentile_disc`` aggregate functions are supported for approximate queries.
 
 The ``GROUP BY``, ``HAVING``, and ``ORDER BY`` clauses can be used together in an approximate query.
 
