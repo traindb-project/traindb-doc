@@ -25,6 +25,7 @@ Diagram
     <embed type="image/svg+xml" src="../_static/rrd/select1.rrd.svg"/>
     <embed type="image/svg+xml" src="../_static/rrd/select2.rrd.svg"/>
     <embed type="image/svg+xml" src="../_static/rrd/select3.rrd.svg"/>
+    <embed type="image/svg+xml" src="../_static/rrd/select33.rrd.svg"/>
     <embed type="image/svg+xml" src="../_static/rrd/select4.rrd.svg"/>
     <embed type="image/svg+xml" src="../_static/rrd/select5.rrd.svg"/>
     <embed type="image/svg+xml" src="../_static/rrd/select6.rrd.svg"/>
@@ -35,6 +36,7 @@ Diagram
   .. image:: ../_static/rrd/select1.rrd.*
   .. image:: ../_static/rrd/select2.rrd.*
   .. image:: ../_static/rrd/select3.rrd.*
+  .. image:: ../_static/rrd/select33.rrd.*
   .. image:: ../_static/rrd/select4.rrd.*
   .. image:: ../_static/rrd/select5.rrd.*
   .. image:: ../_static/rrd/select6.rrd.*
@@ -178,6 +180,10 @@ Additionally, aliases and column lists can be specified.
 Specify search or filter conditions to retrieve only the rows which satisfy the conditions.
 If the ``WHERE`` clause is omitted, all rows are retrieved.
 
+**WHATIF booleanExpression TO numeric_literal**
+
+The ``WHATIF`` clause can be used to adjust the number of rows that satisfy the specified condition by the ratio following the ``TO``.
+
 **GROUP BY groupItemList**
 
 The ``GROUP BY`` clause groups retrieved rows based on the expressions in ``groupItemList``.
@@ -233,3 +239,10 @@ The ``WHERE``, ``GROUP BY``, or ``ORDER BY`` clauses can also be specified accor
   SELECT APPROXIMATE sum(reordered) FROM instacart.order_products
   GROUP BY add_to_cart_order
   ORDER BY add_to_cart_order ASC;
+
+To perform a simulation query by specifying hypothetical conditions, the ``WHATIF`` clause can be used as follows.
+
+.. code-block:: console
+
+  SELECT APPROXIMATE count(*) FROM instacart.order_products
+  WHATIF reordered = 1 TO 1.1;
